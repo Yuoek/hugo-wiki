@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>每日一题 on Yuoek</title>
+    <link>http://localhost:1313/docs/solution/day/</link>
+    <description>Recent content in 每日一题 on Yuoek</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 30 Oct 2025 19:09:30 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/solution/day/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>day 1</title>
+      <link>http://localhost:1313/docs/solution/day/day1/</link>
+      <pubDate>Thu, 30 Oct 2025 19:09:30 +0800</pubDate>
+      <guid>http://localhost:1313/docs/solution/day/day1/</guid>
+      <description>&lt;h2 id=&#34;第-1-天&#34;&gt;&#xA;  第 1 天&#xA;  &#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%ac%ac-1-%e5%a4%a9&#34;&gt;#&lt;/a&gt;&#xA;  &#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;牛客--箭形图案&#34;&gt;&#xA;  牛客 | &lt;a href=&#34;https://ac.nowcoder.com/acm/problem/22056&#34;&gt;箭形图案&lt;/a&gt;&#xA;  &#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%89%9b%e5%ae%a2--%e7%ae%ad%e5%bd%a2%e5%9b%be%e6%a1%88&#34;&gt;#&lt;/a&gt;&#xA;  &#xA;&lt;/h3&gt;&#xA;&lt;blockquote class=&#34;book-hint info&#34;&gt;&#xA;&lt;details &gt;&lt;summary&gt;题目&lt;/summary&gt;&#xA;  &lt;div class=&#34;markdown-inner&#34;&gt;&#xA;    &lt;h1 id=&#34;箭形图案&#34;&gt;&#xA;  箭形图案&#xA;&lt;p&gt;&lt;a class=&#34;anchor&#34; href=&#34;#%e7%ae%ad%e5%bd%a2%e5%9b%be%e6%a1%88&#34;&gt;#&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;题号：NC22056&lt;/p&gt;&#xA;&lt;p&gt;时间限制：C/C++/Rust/Pascal 1秒，其他语言2秒&lt;/p&gt;&#xA;&lt;p&gt;空间限制：C/C++/Rust/Pascal 256 M，其他语言512 M&#xA;64bit IO Format: %lld&lt;/p&gt;&#xA;&lt;h2 id=&#34;题目描述&#34;&gt;&#xA;  题目描述&#xA;&lt;p&gt;&lt;a class=&#34;anchor&#34; href=&#34;#%e9%a2%98%e7%9b%ae%e6%8f%8f%e8%bf%b0&#34;&gt;#&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;KiKi学习了循环，BoBo老师给他出了一系列打印图案的练习，该任务是打印用“*”组成的箭形图案。&lt;/p&gt;&#xA;&lt;h2 id=&#34;输入描述&#34;&gt;&#xA;  输入描述:&#xA;&lt;p&gt;&lt;a class=&#34;anchor&#34; href=&#34;#%e8%be%93%e5%85%a5%e6%8f%8f%e8%bf%b0&#34;&gt;#&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;本题多组输入，每行一个整数（2~20）。&lt;/p&gt;&#xA;&lt;h2 id=&#34;输出描述&#34;&gt;&#xA;  输出描述:&#xA;&lt;p&gt;&lt;a class=&#34;anchor&#34; href=&#34;#%e8%be%93%e5%87%ba%e6%8f%8f%e8%bf%b0&#34;&gt;#&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;针对每行输入，输出用“*”组成的箭形。&lt;/p&gt;&#xA;&lt;h2 id=&#34;示例&#34;&gt;&#xA;  示例&#xA;&lt;p&gt;&lt;a class=&#34;anchor&#34; href=&#34;#%e7%a4%ba%e4%be%8b&#34;&gt;#&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;示例1&#34;&gt;&#xA;  示例1&#xA;&lt;p&gt;&lt;a class=&#34;anchor&#34; href=&#34;#%e7%a4%ba%e4%be%8b1&#34;&gt;#&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;输入&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;2&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    *&#xA;  **&#xA;***&#xA;  **&#xA;    *&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;示例2&#34;&gt;&#xA;  示例2&#xA;&lt;p&gt;&lt;a class=&#34;anchor&#34; href=&#34;#%e7%a4%ba%e4%be%8b2&#34;&gt;#&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;输入&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;3&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;      *&#xA;    **&#xA;  ***&#xA;****&#xA;  ***&#xA;    **&#xA;      *&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;示例3&#34;&gt;&#xA;  示例3&#xA;&lt;p&gt;&lt;a class=&#34;anchor&#34; href=&#34;#%e7%a4%ba%e4%be%8b3&#34;&gt;#&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

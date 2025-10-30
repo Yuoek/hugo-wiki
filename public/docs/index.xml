@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yuoek</title>
+    <link>http://localhost:1313/docs/</link>
+    <description>Recent content on Yuoek</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 29 Oct 2025 21:28:52 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>每日清单</title>
+      <link>http://localhost:1313/docs/README/</link>
+      <pubDate>Wed, 29 Oct 2025 14:31:03 +0800</pubDate>
+      <guid>http://localhost:1313/docs/README/</guid>
+      <description>&lt;h2 id=&#34;每日算法题&#34;&gt;&#xA;  每日算法题&#xA;  &#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%af%8f%e6%97%a5%e7%ae%97%e6%b3%95%e9%a2%98&#34;&gt;#&lt;/a&gt;&#xA;  &#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;每日题单-&#34;&gt;&#xA;  每日题单 📑&#xA;  &#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%af%8f%e6%97%a5%e9%a2%98%e5%8d%95-&#34;&gt;#&lt;/a&gt;&#xA;  &#xA;&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;网站&lt;/th&gt;&#xA;          &lt;th&gt;链接&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;牛客题单&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://ac.nowcoder.com/acm/problem/collection/8405&#34;&gt;https://ac.nowcoder.com/acm/problem/collection/8405&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;洛谷题单&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://www.luogu.com.cn/training/886460#problems&#34;&gt;https://www.luogu.com.cn/training/886460#problems&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;力扣题单&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://leetcode.cn/problem-list/B18PdUnf/&#34;&gt;https://leetcode.cn/problem-list/B18PdUnf/&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;每日一题-&#34;&gt;&#xA;  每日一题 🏷&#xA;  &#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%af%8f%e6%97%a5%e4%b8%80%e9%a2%98-&#34;&gt;#&lt;/a&gt;&#xA;  &#xA;&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;时间&lt;/th&gt;&#xA;          &lt;th&gt;&lt;/th&gt;&#xA;          &lt;th&gt;题名&lt;/th&gt;&#xA;          &lt;th&gt;链接&lt;/th&gt;&#xA;          &lt;th&gt;标签&lt;/th&gt;&#xA;          &lt;th&gt;备注&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;10月30日🚩&lt;/td&gt;&#xA;          &lt;td&gt;牛客&lt;/td&gt;&#xA;          &lt;td&gt;箭形图案&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://ac.nowcoder.com/acm/contest/19305/1005&#34;&gt;https://ac.nowcoder.com/acm/contest/19305/1005&lt;/a&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;洛谷&lt;/td&gt;&#xA;          &lt;td&gt;平均分类&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://www.luogu.com.cn/problem/P5719&#34;&gt;https://www.luogu.com.cn/problem/P5719&lt;/a&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;力扣&lt;/td&gt;&#xA;          &lt;td&gt;两数之和&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://leetcode.cn/problems/two-sum/description/&#34;&gt;https://leetcode.cn/problems/two-sum/description/&lt;/a&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://support.leetcode.cn/hc/kb/article/1686326/&#34;&gt;力扣提交规则&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
+    </item>
+  </channel>
+</rss>

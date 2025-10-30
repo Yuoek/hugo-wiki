@@ -1,0 +1,4992 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="cs 密码学与信息安全">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/toc/tocTabs/tocFile/cs/9_%E5%AF%86%E7%A0%81%E5%AD%A6%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/">
+  <meta property="og:site_name" content="Yuoek">
+  <meta property="og:title" content="密码学与信息安全">
+  <meta property="og:description" content="cs 密码学与信息安全">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2025-10-29T15:41:50+08:00">
+    <meta property="article:modified_time" content="2025-10-29T15:41:50+08:00">
+<title>密码学与信息安全 | Yuoek</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/toc/tocTabs/tocFile/cs/9_%E5%AF%86%E7%A0%81%E5%AD%A6%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/">
+<link rel="stylesheet" href="/book.min.cc624ff1376052746239610f5efea0eec3ba49e0489b9190bdabed9a1bbd0737.css" integrity="sha256-zGJP8TdgUnRiOWEPXv6g7sO6SeBIm5GQvavtmhu9Bzc=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/zh.search.min.af91ca8a69cf60aeb0963d28147c4896e8324ef6222b72cb0af1a32054a23761.js" integrity="sha256-r5HKimnPYK6wlj0oFHxIlugyTvYiK3LLCvGjIFSiN2E=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>Yuoek</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+  
+    
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex">
+      <a role="button" class="flex flex-auto">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        <span>简体中文</span>
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="/en/">
+          <span>English</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/he/">
+          <span>Hebrew</span>
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cff7ea3866edabf42b5373cc36189632" class="toggle"  />
+    <label for="section-cff7ea3866edabf42b5373cc36189632" class="flex">
+      <a role="button" class="flex-auto ">关于</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/about/README/" class="">关于我</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-10628e39683c6221fb6b9cf74d94ec1f" class="toggle"  />
+    <label for="section-10628e39683c6221fb6b9cf74d94ec1f" class="flex">
+      <a role="button" class="flex-auto ">示例</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/shortcode/" class="">短代码</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-461ab6bba22b872f535b4105e9e64a40" class="toggle"  />
+    <label for="section-461ab6bba22b872f535b4105e9e64a40" class="flex">
+      <a role="button" class="flex-auto ">模板</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/README/" class="">关于示例</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8351ab0bb38fa6c65ea59cc10a96c13e" class="toggle"  />
+    <label for="section-8351ab0bb38fa6c65ea59cc10a96c13e" class="flex">
+      <a role="button" class="flex-auto ">代码片段</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/snippets/c/cpoint/" class="">Cpoint</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/snippets/c/cstruct/" class="">Cstruct</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/snippets/java/java/" class="">Java</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/snippets/java/pythondictionary/" class="">Pythondictionary</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/snippets/python/python/" class="">Python</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/snippets/python/pythoncomplex/" class="">Pythoncomplex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/snippets/python/pythondatatypebasic/" class="">Pythondatatypebasic</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/snippets/python/pythondecorate/" class="">Pythondecorate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/snippets/python/pythondictionary/" class="">Pythondictionary</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/snippets/python/pythonnamed/" class="">Pythonnamed</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/snippets/python/pythontuple/" class="">Pythontuple</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/snippets/python/recursive/" class="">Recursive</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-71872df22da6a19703423ddf1be7edb6" class="toggle"  />
+    <label for="section-71872df22da6a19703423ddf1be7edb6" class="flex">
+      <a role="button" class="flex-auto ">语言基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bc92f638b16e9f334371518a4eb34bc4" class="toggle"  />
+    <label for="section-bc92f638b16e9f334371518a4eb34bc4" class="flex">
+      <a href="/docs/arglBase/" class="flex-auto ">算法基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-56f33f5fd7578895a1f53fa0a98b7922" class="toggle"  />
+    <label for="section-56f33f5fd7578895a1f53fa0a98b7922" class="flex">
+      <a role="button" class="flex-auto ">数据结构</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ec92cf474a0970f44024de1f9ebef4dc" class="toggle"  />
+    <label for="section-ec92cf474a0970f44024de1f9ebef4dc" class="flex">
+      <a role="button" class="flex-auto ">搜索</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b6e0657022ec89cedddf4b48f35b0d40" class="toggle"  />
+    <label for="section-b6e0657022ec89cedddf4b48f35b0d40" class="flex">
+      <a role="button" class="flex-auto ">字符串</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dacba9d6dfd48c2d9e3c6ada99af4d69" class="toggle"  />
+    <label for="section-dacba9d6dfd48c2d9e3c6ada99af4d69" class="flex">
+      <a role="button" class="flex-auto ">计算几何</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e2ed2eb79701ee7a95be51ba78eb2582" class="toggle"  />
+    <label for="section-e2ed2eb79701ee7a95be51ba78eb2582" class="flex">
+      <a role="button" class="flex-auto ">图论</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9561d0864165e3b37764132cd120df7b" class="toggle"  />
+    <label for="section-9561d0864165e3b37764132cd120df7b" class="flex">
+      <a role="button" class="flex-auto ">动态规划</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f7623ba585dd9a1c0bf8f9cbbb3b804c" class="toggle"  />
+    <label for="section-f7623ba585dd9a1c0bf8f9cbbb3b804c" class="flex">
+      <a role="button" class="flex-auto ">数学</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7e3763e56ed36ba3a4dd28a8f361da31" class="toggle"  />
+    <label for="section-7e3763e56ed36ba3a4dd28a8f361da31" class="flex">
+      <a role="button" class="flex-auto ">其它</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7493ecec126e6b88313f17f8a2cb5ea4" class="toggle"  />
+    <label for="section-7493ecec126e6b88313f17f8a2cb5ea4" class="flex">
+      <a role="button" class="flex-auto ">计算机科学</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/README/" class="">每日清单</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5cd97156418717154dc9b678600097a4" class="toggle"  />
+    <label for="section-5cd97156418717154dc9b678600097a4" class="flex">
+      <a role="button" class="flex-auto ">Solution</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7d2b33acaedd458c43ec453943c868c0" class="toggle"  />
+    <label for="section-7d2b33acaedd458c43ec453943c868c0" class="flex">
+      <a role="button" class="flex-auto ">Leetcode</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0105e7ba6c8caad49f2bc6e96f38435d" class="toggle"  />
+    <label for="section-0105e7ba6c8caad49f2bc6e96f38435d" class="flex">
+      <a role="button" class="flex-auto ">Luogu</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/luogu/day1/" class="">Day1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2042dfe36e5b165f0759056b62c66925" class="toggle"  />
+    <label for="section-2042dfe36e5b165f0759056b62c66925" class="flex">
+      <a role="button" class="flex-auto ">Nowcoder</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bc634d6be35b27e43030f3495287cc2c" class="toggle" checked />
+    <label for="section-bc634d6be35b27e43030f3495287cc2c" class="flex">
+      <a role="button" class="flex-auto ">Toc</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/arglBase/" class="">arglBase</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/cs/" class="">cs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/dataStructure/" class="">dataStructure</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/dp/" class="">dp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/geometry/" class="">geometry</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/graph/" class="">graph</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/langurage/" class="">langurage</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/mathematics/" class="">mathematics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/other/" class="">other</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/search/" class="">search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/string/" class="">string</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/" class="">Toc Tabs</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/1_1.-%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97/" class="">1. 数值计算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/1_1.-%E6%95%B0%E7%BB%84/" class="">1. 数组</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/1_1.-%E7%BA%BF%E6%80%A7%E6%90%9C%E7%B4%A2/" class="">1. 线性搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/1_%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%A6%82%E8%BF%B0/" class="">动态规划概述</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/1_%E5%9F%BA%E6%9C%AC%E5%87%A0%E4%BD%95%E5%AF%B9%E8%B1%A1/" class="">基本几何对象</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/1_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A8%8B%E5%BA%8F%E5%9F%BA%E7%A1%80/" class="">计算机程序基础</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/1_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/" class="">计算机系统结构</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/1_%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95%E5%AE%9A%E4%B9%89%E4%B8%8E%E7%89%B9%E5%BE%81/" class="">离线算法定义与特征</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/1_%E7%AE%97%E6%B3%95%E5%AE%9A%E4%B9%89%E4%B8%8E%E7%89%B9%E5%BE%81/" class="">算法定义与特征</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/1_%E5%9B%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%AE%9A%E4%B9%89/" class="">图的基本定义</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/1_%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AE%9A%E4%B9%89%E4%B8%8E%E8%A1%A8%E7%A4%BA/" class="">字符串定义与表示</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/2_2.-%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2/" class="">2. 二分搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/2_2.-%E5%9F%BA%E6%9C%AC%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97/" class="">2. 基本算术运算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/2_2.-%E9%93%BE%E8%A1%A8/" class="">2. 链表</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/2_%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/" class="">编程范式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/2_%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%9F%BA%E6%9C%AC%E8%A6%81%E7%B4%A0/" class="">动态规划基本要素</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/2_%E5%9F%BA%E6%9C%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/" class="">基本字符串操作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/2_%E5%87%A0%E4%BD%95%E5%8F%98%E6%8D%A2/" class="">几何变换</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/2_%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/" class="">离线算法设计原则</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/2_%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA%E4%B8%8E%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91/" class="">数据表示与数字逻辑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/2_%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80/" class="">算法分析基础</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/2_%E5%9B%BE%E7%9A%84%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/" class="">图的表示方法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/3_3.-%E5%93%88%E5%B8%8C%E6%90%9C%E7%B4%A2/" class="">3. 哈希搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/3_3.-%E6%95%B0%E8%AE%BA%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/" class="">3. 数论基础算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/3_3.-%E6%A0%88/" class="">3. 栈</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/3_%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86/" class="">操作系统原理</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/3_%E5%8D%95%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D/" class="">单模式匹配</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/3_%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%B1%82%E8%A7%A3%E6%AD%A5%E9%AA%A4/" class="">动态规划求解步骤</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/3_%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="">开发环境配置</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/3_%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/" class="">离线算法复杂度分析</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/3_%E6%95%B0%E5%80%BC%E7%B2%BE%E5%BA%A6%E9%97%AE%E9%A2%98/" class="">数值精度问题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/3_%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95/" class="">算法设计方法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/3_%E5%9B%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/" class="">图的基本性质</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/4_1.-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/" class="">1. 二叉搜索树</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/4_1.-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AE%97%E6%B3%95/" class="">1. 线性代数算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/4_4.-%E9%98%9F%E5%88%97/" class="">4. 队列</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/4_%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80/" class="">程序设计基础</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/4_%E7%82%B9%E4%B8%8E%E5%90%91%E9%87%8F%E8%BF%90%E7%AE%97/" class="">点与向量运算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/4_%E5%A4%9A%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D/" class="">多模式匹配</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/4_%E6%8E%92%E5%BA%8F%E7%B1%BB%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/" class="">排序类离线算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/4_%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/" class="">深度优先搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/4_%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%B3%BB%E7%BB%9F/" class="">数据类型系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/4_%E7%BA%BF%E6%80%A7%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" class="">线性动态规划</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/4_%E7%BA%BF%E6%80%A7%E7%BB%93%E6%9E%84/" class="">线性结构</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/5_1.-%E4%BA%8C%E5%8F%89%E6%A0%91/" class="">1. 二叉树</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/5_2.-%E5%A4%9A%E8%B7%AF%E6%90%9C%E7%B4%A2%E6%A0%91/" class="">2. 多路搜索树</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/5_2.-%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%AE%97%E6%B3%95/" class="">2. 多项式算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/5_%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/" class="">背包问题系列</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/5_%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F/" class="">变量与常量</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/5_%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/" class="">广度优先搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/5_%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97/" class="">距离计算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/5_%E5%89%8D%E7%BC%80%E6%90%9C%E7%B4%A2/" class="">前缀搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/5_%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%96%B9%E6%B3%95/" class="">软件工程方法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/5_%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84/" class="">树形结构</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/5_%E5%9B%BE%E8%AE%BA%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/" class="">图论离线算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/6_2.-%E5%A0%86/" class="">2. 堆</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/6_3.-%E7%A9%BA%E9%97%B4%E5%88%92%E5%88%86%E6%A0%91/" class="">3. 空间划分树</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/6_3.-%E7%BE%A4%E8%AE%BA%E7%AE%97%E6%B3%95/" class="">3. 群论算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/6_%E9%81%8D%E5%8E%86%E7%AE%97%E6%B3%95%E7%9A%84%E5%BA%94%E7%94%A8/" class="">遍历算法的应用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/6_%E5%90%8E%E7%BC%80%E7%BB%93%E6%9E%84/" class="">后缀结构</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/6_%E5%8C%BA%E9%97%B4%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" class="">区间动态规划</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/6_%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/" class="">数据库系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/6_%E5%9B%BE%E7%BB%93%E6%9E%84/" class="">图结构</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/6_%E7%9B%B8%E4%BA%A4%E6%A3%80%E6%B5%8B/" class="">相交检测</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/6_%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8E%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="">运算符与表达式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/6_%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/" class="">字符串处理离线算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/7_1.-%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E5%9F%BA%E7%A1%80/" class="">1. 计算几何基础</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/7_1.-%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/" class="">1. 深度优先搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/7_3.-%E5%A4%9A%E5%8F%89%E6%A0%91/" class="">3. 多叉树</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/7_%E6%AF%94%E8%BE%83%E6%8E%92%E5%BA%8F/" class="">比较排序</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/7_%E5%8D%95%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/" class="">单源最短路径</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/7_%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/" class="">计算理论基础</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/7_%E8%8E%AB%E9%98%9F%E7%AE%97%E6%B3%95/" class="">莫队算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/7_%E6%A0%91%E5%BD%A2%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" class="">树形动态规划</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/7_%E9%A1%BA%E5%BA%8F%E7%BB%93%E6%9E%84/" class="">顺序结构</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/7_%E5%87%B8%E5%8C%85%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%80%A7%E8%B4%A8/" class="">凸包定义与性质</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/7_%E6%97%A0%E6%8D%9F%E5%8E%8B%E7%BC%A9/" class="">无损压缩</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/8_1.-%E5%9B%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" class="">1. 图的基本概念</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/8_2.-%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/" class="">2. 广度优先搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/8_2.-%E5%87%A0%E4%BD%95%E5%8F%98%E6%8D%A2/" class="">2. 几何变换</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/8_%E9%AB%98%E6%95%88%E6%8E%92%E5%BA%8F/" class="">高效排序</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/8_%E7%BB%8F%E5%85%B8%E5%87%B8%E5%8C%85%E7%AE%97%E6%B3%95/" class="">经典凸包算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/8_%E7%A9%BA%E9%97%B4%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/" class="">空间优化方法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/8_%E7%A6%BB%E7%BA%BF%E5%A4%84%E7%90%86%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF/" class="">离线处理查询技术</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/8_%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/" class="">算法设计与分析</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/8_%E6%89%80%E6%9C%89%E8%8A%82%E7%82%B9%E5%AF%B9%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/" class="">所有节点对最短路径</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/8_%E6%9D%A1%E4%BB%B6%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84/" class="">条件分支结构</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/8_%E6%9C%89%E6%8D%9F%E5%8E%8B%E7%BC%A9_%E6%96%87%E6%9C%AC%E7%89%B9%E5%AE%9A_/" class="">有损压缩（文本特定）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/9_2.-%E5%9B%BE%E7%9A%84%E9%81%8D%E5%8E%86/" class="">2. 图的遍历</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/9_3.-%E5%90%AF%E5%8F%91%E5%BC%8F%E6%90%9C%E7%B4%A2/" class="">3. 启发式搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/9_3.-%E4%B8%89%E7%BB%B4%E5%87%A0%E4%BD%95%E7%AE%97%E6%B3%95/" class="">3. 三维几何算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/9_%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB/" class="">编辑距离</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/9_%E5%8A%A8%E6%80%81%E5%87%B8%E5%8C%85/" class="">动态凸包</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/9_%E9%9D%9E%E6%AF%94%E8%BE%83%E6%8E%92%E5%BA%8F/" class="">非比较排序</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/9_%E5%AF%86%E7%A0%81%E5%AD%A6%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/" class="active">密码学与信息安全</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/9_%E5%8C%BA%E9%97%B4%E6%9F%A5%E8%AF%A2%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/" class="">区间查询离线算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/9_%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%BC%98%E5%8C%96/" class="">时间复杂度优化</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/9_%E7%89%B9%E6%AE%8A%E5%9B%BE%E7%9A%84%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/" class="">特殊图的最短路径</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/9_%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/" class="">循环结构</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/10_1.-%E5%8D%95%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D/" class="">1. 单模式匹配</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/10_1.-%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/" class="">1. 线性规划</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/10_3.-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/" class="">3. 最短路径问题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/10_Prim%E7%AE%97%E6%B3%95/" class="">Prim算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/10_%E5%A4%9A%E8%BE%B9%E5%BD%A2%E8%A1%A8%E7%A4%BA/" class="">多边形表示</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/10_%E5%87%BD%E6%95%B0%E5%9F%BA%E7%A1%80/" class="">函数基础</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/10_%E5%9F%BA%E6%9C%AC%E6%90%9C%E7%B4%A2/" class="">基本搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/10_%E5%85%B6%E4%BB%96%E7%9B%B8%E4%BC%BC%E5%BA%A6%E5%BA%A6%E9%87%8F/" class="">其他相似度度量</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/10_%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%9F%BA%E7%A1%80/" class="">人工智能基础</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/10_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%BE%85%E5%8A%A9%E4%BC%98%E5%8C%96/" class="">数据结构辅助优化</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/10_%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86%E7%AE%97%E6%B3%95/" class="">数据预处理算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/11_2.-%E5%A4%9A%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D/" class="">2. 多模式匹配</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/11_2.-%E9%9D%9E%E7%BA%BF%E6%80%A7%E4%BC%98%E5%8C%96/" class="">2. 非线性优化</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/11_4.-%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/" class="">4. 最小生成树</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/11_Kruskal%E7%AE%97%E6%B3%95/" class="">Kruskal算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/11_%E5%A4%9A%E8%BE%B9%E5%BD%A2%E6%93%8D%E4%BD%9C/" class="">多边形操作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/11_%E9%AB%98%E7%BA%A7%E5%87%BD%E6%95%B0%E7%89%B9%E6%80%A7/" class="">高级函数特性</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/11_%E5%9F%BA%E4%BA%8E%E6%AF%94%E8%BE%83%E7%9A%84%E6%8E%92%E5%BA%8F/" class="">基于比较的排序</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/11_%E6%89%B9%E9%87%8F%E8%AE%A1%E7%AE%97%E6%8A%80%E6%9C%AF/" class="">批量计算技术</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/11_%E6%A0%91%E6%90%9C%E7%B4%A2/" class="">树搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/11_%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%88%86%E6%9E%90/" class="">数据科学与分析</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/11_%E7%8A%B6%E6%80%81%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/" class="">状态表示方法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/12_1.-%E5%93%88%E5%B8%8C%E8%A1%A8/" class="">1. 哈希表</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/12_3.-%E8%BF%91%E4%BC%BC%E5%8C%B9%E9%85%8D/" class="">3. 近似匹配</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/12_3.-%E7%BB%84%E5%90%88%E4%BC%98%E5%8C%96/" class="">3. 组合优化</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/12_%E5%A4%9A%E8%BE%B9%E5%BD%A2%E5%8C%85%E5%90%AB%E6%A3%80%E6%B5%8B/" class="">多边形包含检测</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/12_%E9%9D%9E%E6%AF%94%E8%BE%83%E6%8E%92%E5%BA%8F/" class="">非比较排序</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/12_%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/" class="">模块化编程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/12_%E5%85%B6%E4%BB%96%E7%94%9F%E6%88%90%E6%A0%91%E7%AE%97%E6%B3%95/" class="">其他生成树算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/12_%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9%E4%B8%8E%E7%B4%A2%E5%BC%95/" class="">数据压缩与索引</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/12_%E5%9B%BE%E6%90%9C%E7%B4%A2/" class="">图搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/12_%E6%99%BA%E8%83%BD%E7%B3%BB%E7%BB%9F%E5%BA%94%E7%94%A8/" class="">智能系统应用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/12_%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB%E6%8A%80%E5%B7%A7/" class="">状态转移技巧</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/13_1.-%E5%89%AA%E6%9E%9D%E4%BC%98%E5%8C%96/" class="">1. 剪枝优化</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/13_1.-%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%94%9F%E6%88%90/" class="">1. 随机数生成</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/13_2.-%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8/" class="">2. 布隆过滤器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/13_%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA/" class="">基础理论</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/13_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="">计算机网络</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/13_%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/" class="">内存模型</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/13_%E4%B8%89%E8%A7%92%E5%89%96%E5%88%86%E5%9F%BA%E7%A1%80/" class="">三角剖分基础</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/13_%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/" class="">数据库系统中的离线算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/13_%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E7%A1%80/" class="">正则表达式基础</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/13_%E7%8A%B6%E6%80%81%E7%A9%BA%E9%97%B4%E5%88%86%E6%9E%90/" class="">状态空间分析</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/13_%E6%9C%80%E5%A4%A7%E6%B5%81%E9%97%AE%E9%A2%98/" class="">最大流问题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/14_1.-%E5%B9%B6%E6%9F%A5%E9%9B%86/" class="">1. 并查集</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/14_2.-%E5%B1%80%E9%83%A8%E6%90%9C%E7%B4%A2/" class="">2. 局部搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/14_2.-%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90/" class="">2. 统计分析</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/14_%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/" class="">分布式计算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/14_%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/" class="">分布式系统中的离线算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/14_%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98/" class="">经典问题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/14_%E4%B8%89%E8%A7%92%E5%89%96%E5%88%86%E7%AE%97%E6%B3%95/" class="">三角剖分算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/14_%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%BC%95%E6%93%8E/" class="">正则表达式引擎</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/14_%E6%8C%87%E9%92%88%E4%B8%8E%E5%BC%95%E7%94%A8/" class="">指针与引用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/14_%E7%BB%84%E5%90%88%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98/" class="">组合优化问题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/14_%E6%9C%80%E5%B0%8F%E5%89%B2%E9%97%AE%E9%A2%98/" class="">最小割问题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/15_2.-%E7%BA%BF%E6%AE%B5%E6%A0%91/" class="">2. 线段树</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/15_3.-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/" class="">3. 机器学习算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/15_3.-%E5%85%83%E5%90%AF%E5%8F%91%E5%BC%8F%E6%90%9C%E7%B4%A2/" class="">3. 元启发式搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/15_Voronoi%E5%9B%BE/" class="">Voronoi图</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/15_%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90/" class="">词法分析</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/15_%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E4%B8%AD%E7%9A%84%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/" class="">大数据处理中的离线算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/15_%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%8A%80%E6%9C%AF/" class="">内存管理技术</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/15_%E7%89%B9%E6%AE%8A%E7%BD%91%E7%BB%9C%E6%B5%81%E9%97%AE%E9%A2%98/" class="">特殊网络流问题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/15_%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1%E4%B8%8E%E5%BA%94%E7%94%A8/" class="">网络服务与应用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/15_%E5%BA%8F%E5%88%97%E5%A4%84%E7%90%86%E9%97%AE%E9%A2%98/" class="">序列处理问题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/15_%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B/" class="">应用实例</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/16_1.-%E5%B9%B6%E8%A1%8C%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95/" class="">1. 并行搜索算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/16_1.-%E5%9B%BE%E8%AE%BA%E7%AE%97%E6%B3%95/" class="">1. 图论算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/16_3.-%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" class="">3. 树状数组</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/16_%E5%B9%B6%E8%A1%8C%E5%8C%96%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/" class="">并行化离线算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/16_%E8%8C%83%E5%9B%B4%E6%9F%A5%E8%AF%A2/" class="">范围查询</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/16_%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/" class="">基本原理</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/16_%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1/" class="">类与对象</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/16_%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95/" class="">匹配算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/16_%E5%89%8D%E6%B2%BF%E8%AE%A1%E7%AE%97%E6%8A%80%E6%9C%AF/" class="">前沿计算技术</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/16_%E5%9B%BE%E8%AE%BA%E9%97%AE%E9%A2%98/" class="">图论问题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/16_%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90/" class="">语法分析</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/17_1.-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/" class="">1. 字符串匹配</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/17_2.-%E5%88%86%E5%B8%83%E5%BC%8F%E6%90%9C%E7%B4%A2/" class="">2. 分布式搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/17_2.-%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6%E7%AE%97%E6%B3%95/" class="">2. 组合数学算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/17_DNA%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90/" class="">DNA序列分析</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/17_%E5%85%B8%E5%9E%8B%E5%BA%94%E7%94%A8/" class="">典型应用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/17_%E8%A6%86%E7%9B%96%E7%AE%97%E6%B3%95/" class="">覆盖算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/17_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/" class="">计算机应用领域</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/17_%E7%BB%A7%E6%89%BF%E4%B8%8E%E5%A4%9A%E6%80%81/" class="">继承与多态</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/17_%E7%A9%BA%E9%97%B4%E5%88%86%E5%89%B2%E6%8A%80%E6%9C%AF/" class="">空间分割技术</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/17_%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5/" class="">内存优化策略</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/17_%E6%B8%B8%E6%88%8F%E4%B8%8E%E5%8D%9A%E5%BC%88/" class="">游戏与博弈</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/18_1.-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%90%9C%E7%B4%A2/" class="">1. 数据库搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/18_2.-%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84/" class="">2. 后缀数组</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/18_3.-%E9%80%BB%E8%BE%91%E7%AE%97%E6%B3%95/" class="">3. 逻辑算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/18_%E9%AB%98%E7%BA%A7OOP%E7%89%B9%E6%80%A7/" class="">高级OOP特性</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/18_%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%AD%A6%E5%BA%94%E7%94%A8/" class="">基因组学应用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/18_%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/" class="">记忆化搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/18_%E8%BF%9E%E9%80%9A%E6%80%A7/" class="">连通性</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/18_%E5%8C%B9%E9%85%8D%E4%B8%8E%E8%A6%86%E7%9B%96%E7%9A%84%E5%85%B3%E7%B3%BB/" class="">匹配与覆盖的关系</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/cs/18_%E7%A4%BE%E4%BC%9A%E4%B8%8E%E4%BC%A6%E7%90%86%E9%97%AE%E9%A2%98/" class="">社会与伦理问题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/18_%E7%AE%97%E6%B3%95%E9%80%89%E6%8B%A9%E4%B8%8E%E8%B0%83%E4%BC%98/" class="">算法选择与调优</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/18_%E7%BA%BF%E6%AE%B5%E4%B8%8E%E5%B0%84%E7%BA%BF%E6%9F%A5%E8%AF%A2/" class="">线段与射线查询</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/19_1.-%E6%96%B9%E7%A8%8B%E6%B1%82%E8%A7%A3/" class="">1. 方程求解</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/19_2.-%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/" class="">2. 信息检索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/19_3.-%E8%87%AA%E5%8A%A8%E6%9C%BA/" class="">3. 自动机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/19_%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/" class="">错误处理机制</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/19_%E8%BF%AD%E4%BB%A3%E5%AE%9E%E7%8E%B0/" class="">迭代实现</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/19_%E5%93%88%E5%B8%8C%E5%87%BD%E6%95%B0/" class="">哈希函数</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/19_%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F/" class="">连通分量</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/19_%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E5%9F%BA%E7%A1%80/" class="">路径规划基础</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/19_%E7%BD%91%E7%BB%9C%E6%B5%81/" class="">网络流</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/19_%E6%96%B0%E5%9E%8B%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95%E7%A0%94%E7%A9%B6/" class="">新型离线算法研究</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/20_1.-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/" class="">1. 时间复杂度分析</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/20_2.-%E6%8F%92%E5%80%BC%E4%B8%8E%E9%80%BC%E8%BF%91/" class="">2. 插值与逼近</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/20_3.-%E6%B8%B8%E6%88%8FAI%E6%90%9C%E7%B4%A2/" class="">3. 游戏AI搜索</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/20_%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0/" class="">编程语言实现</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/20_%E9%AB%98%E7%BA%A7%E5%9B%BE%E7%AE%97%E6%B3%95/" class="">高级图算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/20_%E5%89%B2%E7%82%B9%E4%B8%8E%E6%A1%A5/" class="">割点与桥</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/20_%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/" class="">加密算法中的字符串处理</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/20_%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95%E7%90%86%E8%AE%BA%E8%BF%9B%E5%B1%95/" class="">离线算法理论进展</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/20_%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95/" class="">路径规划算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/20_%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E7%AD%96%E7%95%A5/" class="">异常处理策略</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/21_1.-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/" class="">1. 时间复杂度分析</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/21_2.-%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/" class="">2. 空间复杂度分析</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/21_3.-%E6%95%B0%E5%80%BC%E7%A7%AF%E5%88%86%E4%B8%8E%E5%BE%AE%E5%88%86/" class="">3. 数值积分与微分</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/21_%E5%B8%B8%E7%94%A8%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/" class="">常用内置函数</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/21_%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/" class="">分布式字符串处理</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/21_%E6%A6%82%E7%8E%87%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" class="">概率动态规划</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/21_%E9%AB%98%E7%BA%A7%E8%BF%90%E5%8A%A8%E8%A7%84%E5%88%92/" class="">高级运动规划</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/21_%E8%BF%9E%E9%80%9A%E5%BA%A6%E8%AE%A1%E7%AE%97/" class="">连通度计算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/21_%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D/" class="">模式匹配</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/other/21_%E5%AE%9E%E9%99%85%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98/" class="">实际应用挑战</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/22_1.-%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/" class="">1. 对称加密算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/22_2.-%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/" class="">2. 空间复杂度分析</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dataStructure/22_3.-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%80%89%E6%8B%A9%E7%AD%96%E7%95%A5/" class="">3. 数据结构选择策略</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/22_%E5%A4%9A%E7%9B%AE%E6%A0%87%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" class="">多目标动态规划</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/22_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%BA%94%E7%94%A8/" class="">计算机图形学应用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/22_%E6%B5%81%E5%BC%8F%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/" class="">流式字符串处理</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/22_%E5%B9%B3%E9%9D%A2%E5%9B%BE%E7%AE%97%E6%B3%95/" class="">平面图算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/22_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%BA%93/" class="">数据结构库</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/22_%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/" class="">字符串处理</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/23_2.-%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/" class="">2. 非对称加密算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/search/23_3.-%E5%AE%9E%E9%99%85%E6%80%A7%E8%83%BD%E8%80%83%E9%87%8F/" class="">3. 实际性能考量</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/23_%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F/" class="">地理信息系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/23_%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" class="">基本概念</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/23_%E8%BF%91%E4%BC%BC%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" class="">近似动态规划</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/23_%E7%A9%BA%E9%97%B4%E4%BC%98%E5%8C%96/" class="">空间优化</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/23_%E5%9B%BE%E7%9D%80%E8%89%B2%E7%AE%97%E6%B3%95/" class="">图着色算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/23_%E6%96%87%E4%BB%B6%E4%B8%8EIO%E6%93%8D%E4%BD%9C/" class="">文件与IO操作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/24_3.-%E5%93%88%E5%B8%8C%E5%87%BD%E6%95%B0/" class="">3. 哈希函数</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/24_%E4%BB%A3%E7%A0%81%E8%B4%A8%E9%87%8F%E4%BF%9D%E8%AF%81/" class="">代码质量保证</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/24_%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E4%B8%8ECAD_CAM/" class="">机器人学与CAD/CAM</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/24_%E5%87%A0%E4%BD%95%E7%AE%97%E6%B3%95/" class="">几何算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/24_%E7%AB%9E%E8%B5%9B%E9%A2%98%E7%9B%AE%E8%A7%A3%E6%9E%90/" class="">竞赛题目解析</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/24_%E6%97%B6%E9%97%B4%E4%BC%98%E5%8C%96/" class="">时间优化</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/24_%E7%89%B9%E6%AE%8A%E5%9B%BE%E7%9A%84%E7%9D%80%E8%89%B2/" class="">特殊图的着色</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/25_1.-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/" class="">1. 并行计算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/25_%E8%B0%83%E8%AF%95%E6%8A%80%E6%9C%AF/" class="">调试技术</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/25_%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E5%A4%8D%E6%9D%82%E5%BA%A6/" class="">计算几何复杂度</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/25_%E8%BF%91%E4%BC%BC%E7%AE%97%E6%B3%95/" class="">近似算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/25_%E5%AE%9E%E9%99%85%E9%97%AE%E9%A2%98%E5%BB%BA%E6%A8%A1/" class="">实际问题建模</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/25_%E9%9A%8F%E6%9C%BA%E5%8C%96%E7%AE%97%E6%B3%95/" class="">随机化算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/25_%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/" class="">文本编辑器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/26_2.-%E5%88%86%E5%B8%83%E5%BC%8F%E7%AE%97%E6%B3%95/" class="">2. 分布式算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/26_%E5%B9%B6%E8%A1%8C%E5%9B%BE%E7%AE%97%E6%B3%95/" class="">并行图算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/26_%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%90%86%E8%AE%BA/" class="">复杂度理论</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/26_%E5%87%A0%E4%BD%95%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="">几何数据结构</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/26_%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/" class="">搜索引擎</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/26_%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/" class="">项目管理</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/dp/26_%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E4%B8%8E%E8%B0%83%E4%BC%98/" class="">性能分析与调优</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/27_3.-%E4%BA%91%E8%AE%A1%E7%AE%97%E7%AE%97%E6%B3%95/" class="">3. 云计算算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/27_%E8%BF%91%E4%BC%BC%E7%AE%97%E6%B3%95/" class="">近似算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/arglBase/27_%E5%AE%9E%E9%99%85%E5%BA%94%E7%94%A8/" class="">实际应用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/string/27_%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/" class="">数据库系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/geometry/27_%E6%96%B0%E5%85%B4%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91/" class="">新兴研究方向</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/27_%E4%B8%BB%E6%B5%81%E8%AF%AD%E8%A8%80%E7%89%B9%E6%80%A7%E5%AF%B9%E6%AF%94/" class="">主流语言特性对比</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/28_1.-%E7%89%B9%E6%AE%8A%E5%87%BD%E6%95%B0%E8%AE%A1%E7%AE%97/" class="">1. 特殊函数计算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/28_%E5%AE%9E%E9%99%85%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/" class="">实际应用领域</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/28_%E8%AF%AD%E8%A8%80%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF/" class="">语言发展趋势</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/29_2.-%E7%A7%AF%E5%88%86%E5%8F%98%E6%8D%A2/" class="">2. 积分变换</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/29_%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="">算法工程实践</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/langurage/29_%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84%E5%BB%BA%E8%AE%AE/" class="">学习路径建议</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/mathematics/30_3.-%E7%89%B9%E6%AE%8A%E6%95%B0%E8%AE%A1%E7%AE%97/" class="">3. 特殊数计算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/tocFile/graph/30_%E6%96%B0%E5%85%B4%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91/" class="">新兴研究方向</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/arglBase/" class="">Argl Base</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/cs/" class="">Cs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/dataStructure/" class="">Data Structure</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/dp/" class="">Dp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/geometry/" class="">Geometry</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/graph/" class="">Graph</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/langurage/" class="">Langurage</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/mathematics/" class="">Mathematics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/other/" class="">Other</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/search/" class="">Search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/toc/tocTabs/string/" class="">String</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/yuoek/hugo-docs/"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>密码学与信息安全</h3>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><p>cs 密码学与信息安全</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+<div>
+  <a class="flex align-center" href="https://github.com/yuoek/hugo-docs/edit/main/exampleSite/content/zh/docs/toc/tocTabs/tocFile/cs/9_%E5%AF%86%E7%A0%81%E5%AD%A6%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8.md" target="_blank" rel="noopener edit">
+    <img src="/svg/edit.svg" class="book-icon" alt="" />
+    <span>编辑本页</span>
+  </a>
+</div>
+
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/toc/tocTabs/tocFile/arglBase/9_%E9%9D%9E%E6%AF%94%E8%BE%83%E6%8E%92%E5%BA%8F/" class="flex align-center book-icon">
+        <img src="/svg/backward.svg" class="book-icon" alt="Previous" title="非比较排序" />
+        <span>非比较排序</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/toc/tocTabs/tocFile/other/9_%E5%8C%BA%E9%97%B4%E6%9F%A5%E8%AF%A2%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/" class="flex align-center book-icon">
+        <span>区间查询离线算法</span>
+        <img src="/svg/forward.svg" class="book-icon" alt="Next" title="区间查询离线算法" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments"><head>
+  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
+</head>
+
+<body>
+
+  <div id="waline"></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+    init({
+      el: '#waline',
+      serverURL: 'https://comment.yuoek.icu/',
+      lang: 'zh-CN',
+      locale: { placeholder: '请留下你的评论吧:)' },
+      wordLimit: 500,
+      search: false,
+      pageview: true,
+      emoji: [ 
+        '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+        '//unpkg.com/@waline/emojis@1.2.0/tieba',
+        '//unpkg.com/@waline/emojis@1.2.0/qq',
+        '//unpkg.com/@waline/emojis@1.2.0/alus',
+        '//unpkg.com/@waline/emojis@1.1.0/bilibili',
+        'https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs',
+      ],
+      dark: 'html[class="scroll-smooth dark"]',
+    });
+  </script>
+
+<style>
+   
+  :root {
+     
+    --waline-font-size: 16px;
+
+     
+    --waline-white: #ffff;
+    --waline-light-grey: #7cc0e7;
+    --waline-dark-grey: #7cc0e7;
+    --waline-theme-color: #ee98e3de;
+    --waline-active-color: #7cc0e7;
+    --waline-color: #222;
+    
+     
+    --waline-bgcolor: rgba(255, 255, 255, 0.5);
+    --waline-bgcolor-light: rgba(248, 248, 248, 0.2);
+    --waline-bgcolor-hover: rgba(46, 204, 113, 0.2);
+    
+     
+    --waline-border-color:  #7cc0e7;
+    --waline-disable-bgcolor: rgba(248, 248, 248, 0.0);
+    --waline-disable-color: #7cc0e7;
+    
+     
+    --waline-code-bgcolor: #282c34;
+    --waline-bq-color: rgba(240, 240, 240, 0.2);
+    --waline-avatar-size: 3.25rem;
+    --waline-m-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
+    --waline-badge-color: #ee98e3de;
+    --waline-badge-font-size: 12px;
+    --waline-info-border: 1px solid rgba(153, 153, 153, 0.2);
+    --waline-info-color: #7cc0e7;
+    --waline-info-font-size: 16px;
+    --waline-info-bgcolor: rgba(235, 235, 235, 0.0);
+    
+     
+    --waline-border: 1px solid var(--waline-border-color);
+    --waline-avatar-radius: 50%;
+    --waline-box-shadow: none;
+    
+     
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+   
+  html[class="scroll-smooth dark"] {
+    --waline-white: #000;
+    --waline-light-grey: #999;
+    --waline-dark-grey: #999;
+    --waline-color: #c2c2c2;
+    
+     
+    --waline-bgcolor: rgba(30, 41, 59, 0.3);
+    --waline-bgcolor-light: rgba(42, 53, 79, 0.6);
+    
+     
+    --waline-border-color: rgba(102, 102, 102, 0.2);
+    --waline-disable-bgcolor: rgba(68, 68, 68, 0.2);
+    --waline-disable-color: #888;
+    --waline-bq-color: rgba(31, 45, 75, 0.2);
+    --waline-info-bgcolor: rgba(31, 45, 75, 0.2);
+    --waline-info-color: #888;
+    --waline-info-border: 1px solid rgba(211, 211, 211, 0.2);
+    
+     
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+   
+  .wl-editor {
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  input:focus {   
+    outline: none;  
+    border: 0;  
+    box-shadow: none;  
+  }  
+  textarea:focus {   
+    outline: none;  
+    border: 0;  
+    box-shadow: none;  
+  }
+
+  .wl-editor {
+      background-image: url(/amuro.png);
+      background-size: 10%;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-color: rgba(255, 255, 255, 0);
+      resize: vertical
+  }
+  .wl-editor:focus{
+      background-color: rgba(255, 255, 255, 0);
+      background-position-x: 800px;
+      background-position-y: 1000px;
+      transition: all 0.2s ease-in-out 0s;
+  }
+</style>
+
+</body>
+</div>
+  
+ 
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
