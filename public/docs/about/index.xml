@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>关于 on Yuoek</title>
-    <link>http://localhost:1313/docs/about/</link>
+    <link>http://localhost:39043/docs/about/</link>
     <description>Recent content in 关于 on Yuoek</description>
     <generator>Hugo</generator>
     <language>zh</language>
     <lastBuildDate>Wed, 29 Oct 2025 21:28:52 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:39043/docs/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于我</title>
-      <link>http://localhost:1313/docs/about/README/</link>
+      <link>http://localhost:39043/docs/about/README/</link>
       <pubDate>Sat, 04 Oct 2025 15:21:55 +0800</pubDate>
-      <guid>http://localhost:1313/docs/about/README/</guid>
-      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/katex/katex.min.css&#34; /&gt;&#xA;&lt;script defer src=&#34;http://localhost:1313/katex/katex.min.js&#34;&gt;&lt;/script&gt;&#xA;&#xA;  &lt;script defer src=&#34;http://localhost:1313/katex/auto-render.min.js&#34; onload=&#34;renderMathInElement(document.body, {&#xA;  &amp;#34;delimiters&amp;#34;: [&#xA;    {&amp;#34;left&amp;#34;: &amp;#34;$$&amp;#34;, &amp;#34;right&amp;#34;: &amp;#34;$$&amp;#34;, &amp;#34;display&amp;#34;: true},&#xA;    {&amp;#34;left&amp;#34;: &amp;#34;$&amp;#34;, &amp;#34;right&amp;#34;: &amp;#34;$&amp;#34;, &amp;#34;display&amp;#34;: false},&#xA;    {&amp;#34;left&amp;#34;: &amp;#34;\\(&amp;#34;, &amp;#34;right&amp;#34;: &amp;#34;\\)&amp;#34;, &amp;#34;display&amp;#34;: false},&#xA;    {&amp;#34;left&amp;#34;: &amp;#34;\\[&amp;#34;, &amp;#34;right&amp;#34;: &amp;#34;\\]&amp;#34;, &amp;#34;display&amp;#34;: true}&#xA;  ]&#xA;}&#xA;);&#34;&gt;&lt;/script&gt;</description>
+      <guid>http://localhost:39043/docs/about/README/</guid>
+      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:39043/katex/katex.min.css&#34; /&gt;&#xA;&lt;script defer src=&#34;http://localhost:39043/katex/katex.min.js&#34;&gt;&lt;/script&gt;&#xA;&#xA;  &lt;script defer src=&#34;http://localhost:39043/katex/auto-render.min.js&#34; onload=&#34;renderMathInElement(document.body, {&#xA;  &amp;#34;delimiters&amp;#34;: [&#xA;    {&amp;#34;left&amp;#34;: &amp;#34;$$&amp;#34;, &amp;#34;right&amp;#34;: &amp;#34;$$&amp;#34;, &amp;#34;display&amp;#34;: true},&#xA;    {&amp;#34;left&amp;#34;: &amp;#34;$&amp;#34;, &amp;#34;right&amp;#34;: &amp;#34;$&amp;#34;, &amp;#34;display&amp;#34;: false},&#xA;    {&amp;#34;left&amp;#34;: &amp;#34;\\(&amp;#34;, &amp;#34;right&amp;#34;: &amp;#34;\\)&amp;#34;, &amp;#34;display&amp;#34;: false},&#xA;    {&amp;#34;left&amp;#34;: &amp;#34;\\[&amp;#34;, &amp;#34;right&amp;#34;: &amp;#34;\\]&amp;#34;, &amp;#34;display&amp;#34;: true}&#xA;  ]&#xA;}&#xA;);&#34;&gt;&lt;/script&gt;</description>
     </item>
   </channel>
 </rss>

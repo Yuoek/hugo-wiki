@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=39043&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
@@ -269,7 +269,7 @@ Tim排序原理
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/toc/tocTabs/tocFile/arglBase/7_%E6%AF%94%E8%BE%83%E6%8E%92%E5%BA%8F/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39043/docs/toc/tocTabs/tocFile/arglBase/7_%E6%AF%94%E8%BE%83%E6%8E%92%E5%BA%8F/">
   <meta property="og:site_name" content="Yuoek">
   <meta property="og:title" content="比较排序">
   <meta property="og:description" content="第一章 排序算法基础 # 1.1 排序基本概念 # 排序的定义与分类 稳定性与原地排序 时间复杂度与空间复杂度 比较排序与非比较排序 1.2 算法分析基础 # 渐进符号与复杂度分析 最坏情况与平均情况分析 递归关系求解 比较树模型 第二章 简单排序算法 # 2.1 冒泡排序 # 算法原理与实现 优化版本（标志位优化） 复杂度分析 适用场景与局限性 2.2 选择排序 # 算法流程与实现 稳定性分析 比较次数与交换次数 实际应用场景 2.3 插入排序 # 直接插入排序 二分插入排序 希尔排序 自适应特性分析 第三章 高效比较排序算法 # 3.1 快速排序 # 分治策略与分区过程 递归实现与迭代实现 枢纽元素选择策略 三路快速排序 3.2 归并排序 # 分治思想与合并过程 自顶向下与自底向上实现 外部排序应用 稳定性证明 3.3 堆排序 # 二叉堆数据结构 建堆过程与堆调整 原地排序特性 优先队列应用 第四章 特殊比较排序算法 # 4.1 树形排序 # 二叉树排序 锦标赛排序 决策树模型 信息论下界 4.2 其他比较排序 # 梳排序 鸡尾酒排序 循环排序 图书馆排序 第五章 比较排序理论分析 # 5.1 比较排序下界 # 决策树模型 信息论下界证明 比较次数下界 最优排序算法 5.2 实际性能分析 # 缓存友好性 分支预测影响 实际运行时间测量 硬件特性考虑 第六章 排序算法比较与应用 # 6.1 算法性能对比 # 时间复杂度对比表 空间复杂度对比 稳定性对比 实际测试数据 6.2 应用场景选择 # 小规模数据排序 大规模数据排序 部分有序数据 特殊数据类型 第七章 优化与改进 # 7.1 混合排序算法 # Tim排序原理 内省排序 块排序 自适应排序 7.2 工程实践优化 # 内存访问优化 并行化排序 预处理技术 特定硬件优化 第八章 扩展与相关主题 # 8.1 非比较排序 # 计数排序 基数排序 桶排序 适用范围比较 8.2 排序相关问题 # 选择算法 逆序对计数 外部排序 稳定匹配问题">
@@ -281,10 +281,10 @@ Tim排序原理
 <title>比较排序 | Yuoek</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:1313/docs/toc/tocTabs/tocFile/arglBase/7_%E6%AF%94%E8%BE%83%E6%8E%92%E5%BA%8F/">
+<link rel="canonical" href="http://localhost:39043/docs/toc/tocTabs/tocFile/arglBase/7_%E6%AF%94%E8%BE%83%E6%8E%92%E5%BA%8F/">
 <link rel="stylesheet" href="/book.min.cc624ff1376052746239610f5efea0eec3ba49e0489b9190bdabed9a1bbd0737.css" integrity="sha256-zGJP8TdgUnRiOWEPXv6g7sO6SeBIm5GQvavtmhu9Bzc=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.af91ca8a69cf60aeb0963d28147c4896e8324ef6222b72cb0af1a32054a23761.js" integrity="sha256-r5HKimnPYK6wlj0oFHxIlugyTvYiK3LLCvGjIFSiN2E=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.5c9887e804666e3adac3dd894fa9bc8cfe7b841cd2e3669339cdd486c37a3ef8.js" integrity="sha256-XJiH6ARmbjraw92JT6m8jP57hBzS42aTOc3UhsN6Pvg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -888,7 +888,39 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/README/" class="">每日清单</a>
+    <input type="checkbox" id="section-5cd97156418717154dc9b678600097a4" class="toggle"  />
+    <label for="section-5cd97156418717154dc9b678600097a4" class="flex">
+      <a role="button" class="flex-auto ">题解</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-42178b60598f5a4791e49bb322264018" class="toggle"  />
+    <label for="section-42178b60598f5a4791e49bb322264018" class="flex">
+      <a href="/docs/solution/day/" class="flex-auto ">每日一题</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/day/day2/" class="">day 2</a>
   
 
         </li>
@@ -901,14 +933,16 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-5cd97156418717154dc9b678600097a4" class="toggle"  />
-    <label for="section-5cd97156418717154dc9b678600097a4" class="flex">
-      <a role="button" class="flex-auto ">Solution</a>
-    </label>
+    <a href="/docs/solution/day/day1/" class="">day 1</a>
   
 
-          
-  <ul>
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
     
       
         <li>
@@ -947,19 +981,6 @@ https://github.com/alex-shpak/hugo-book
           
   <ul>
     
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/solution/luogu/day1/" class="">Day1</a>
-  
-
-        </li>
-      
-    
   </ul>
 
         </li>
@@ -987,6 +1008,19 @@ https://github.com/alex-shpak/hugo-book
       
     
   </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/README/" class="">每日清单</a>
+  
 
         </li>
       

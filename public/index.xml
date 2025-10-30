@@ -1968,6 +1968,13 @@
       <description>&lt;p&gt;graph 新兴研究方向&lt;/p&gt;</description>
     </item>
     <item>
+      <title>day 2</title>
+      <link>http://localhost:1313/docs/solution/day/day2/</link>
+      <pubDate>Fri, 31 Oct 2025 07:01:09 +0800</pubDate>
+      <guid>http://localhost:1313/docs/solution/day/day2/</guid>
+      <description>&lt;h2 id=&#34;第-2-天&#34;&gt;&#xA;  第 2 天&#xA;  &#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%ac%ac-2-%e5%a4%a9&#34;&gt;#&lt;/a&gt;&#xA;  &#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;牛客--模板-差分&#34;&gt;&#xA;  牛客 | &lt;a href=&#34;https://ac.nowcoder.com/acm/problem/226303&#34;&gt;模板-差分&lt;/a&gt;&#xA;  &#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%89%9b%e5%ae%a2--%e6%a8%a1%e6%9d%bf-%e5%b7%ae%e5%88%86&#34;&gt;#&lt;/a&gt;&#xA;  &#xA;&lt;/h3&gt;&#xA;&lt;blockquote class=&#34;book-hint info&#34;&gt;&#xA;&lt;details &gt;&lt;summary&gt;题目&lt;/summary&gt;&#xA;  &lt;div class=&#34;markdown-inner&#34;&gt;&#xA;    &lt;h1 id=&#34;模板-差分&#34;&gt;&#xA;  模板-差分&#xA;&lt;p&gt;&lt;a class=&#34;anchor&#34; href=&#34;#%e6%a8%a1%e6%9d%bf-%e5%b7%ae%e5%88%86&#34;&gt;#&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;题号：NC226303&lt;/p&gt;&#xA;&lt;p&gt;时间限制：C/C++/Rust/Pascal 1秒，其他语言2秒&lt;/p&gt;&#xA;&lt;p&gt;空间限制：C/C++/Rust/Pascal 256 M，其他语言512 M&#xA;64bit IO Format: %lld&lt;/p&gt;&#xA;&lt;h2 id=&#34;题目描述&#34;&gt;&#xA;  题目描述&#xA;&lt;p&gt;&lt;a class=&#34;anchor&#34; href=&#34;#%e9%a2%98%e7%9b%ae%e6%8f%8f%e8%bf%b0&#34;&gt;#&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;对于给定的长度为 $n$ 的数组 ${a_1, a_2, &amp;hellip;, a_n}$，我们有 $m$ 次修改操作，每一次操作给出三个参数 $l, r, k$，代表将数组中的 $a_l, a_{l+1}, &amp;hellip;, a_r$都加上 $k$。请你直接输出全部操作完成后的数组。&lt;/p&gt;&#xA;&lt;h2 id=&#34;输入描述&#34;&gt;&#xA;  输入描述&#xA;&lt;p&gt;&lt;a class=&#34;anchor&#34; href=&#34;#%e8%be%93%e5%85%a5%e6%8f%8f%e8%bf%b0&#34;&gt;#&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;第一行输入两个整数 $n, m$ 代表数组中的元素数量、操作次数。&lt;/p&gt;&#xA;&lt;p&gt;第二行输入 $a_1, a_2, &amp;hellip;, a_n$ 个整数代表初始数组。&lt;/p&gt;&#xA;&lt;p&gt;此后 $m$ 行，每行输入三个整数代表一次操作。&lt;/p&gt;&#xA;&lt;h2 id=&#34;输出描述&#34;&gt;&#xA;  输出描述&#xA;&lt;p&gt;&lt;a class=&#34;anchor&#34; href=&#34;#%e8%be%93%e5%87%ba%e6%8f%8f%e8%bf%b0&#34;&gt;#&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;在一行上输出个整数 $l, r, k$，代表全部操作完成后的数组。&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>day 1</title>
       <link>http://localhost:1313/docs/solution/day/day1/</link>
       <pubDate>Thu, 30 Oct 2025 19:09:30 +0800</pubDate>

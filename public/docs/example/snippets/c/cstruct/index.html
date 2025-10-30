@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=39043&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
@@ -263,7 +263,7 @@ void deepCopyStudent(struct Student *dest, const struct Student *src) {
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/example/snippets/c/cstruct/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39043/docs/example/snippets/c/cstruct/">
   <meta property="og:site_name" content="Yuoek">
   <meta property="og:title" content="Yuoek">
   <meta property="og:description" content="cstruct # 定义 # // 结构体定义 struct Student { int id; char name[20]; float score; int age; }; 声明方式 # // 方式1：先定义后声明 struct Student { int id; char name[20]; }; struct Student stu1; // 方式2：定义时声明 struct Student { int id; char name[20]; } stu1, stu2; // 方式3：使用typedef typedef struct { int id; char name[20]; } Student; Student stu1; 初始化方法 # // 顺序初始化 struct Student stu1 = {1001, &#34;张三&#34;, 85.5, 20}; // 指定成员初始化（C99标准） struct Student stu2 = { .id = 1002, .name = &#34;李四&#34;, .age = 21 }; // 部分初始化 struct Student stu3 = {1003}; // 其余成员自动初始化为0 普通变量访问 # struct Student stu; stu.id = 1001; strcpy(stu.name, &#34;王五&#34;); stu.score = 90.5; printf(&#34;学号：%d\n&#34;, stu.id); printf(&#34;姓名：%s\n&#34;, stu.name); 指针变量访问 # struct Student stu; struct Student *p = &amp;stu; // 方式1：使用-&gt;运算符 p-&gt;id = 1002; strcpy(p-&gt;name, &#34;赵六&#34;); // 方式2：使用*和.运算符 (*p).score = 88.5; 结构体数组 # // 定义结构体数组 struct Student class[3] = { {1001, &#34;张三&#34;, 85.5, 20}, {1002, &#34;李四&#34;, 92.0, 19}, {1003, &#34;王五&#34;, 78.5, 21} }; // 访问结构体数组元素 for(int i = 0; i &lt; 3; i&#43;&#43;) { printf(&#34;学生%d：%s，成绩：%.1f\n&#34;, class[i].id, class[i].name, class[i].score); } 结构体作为函数参数 # // 值传递 void printStudent(struct Student stu) { printf(&#34;学号：%d，姓名：%s\n&#34;, stu.id, stu.name); } // 地址传递（推荐） void modifyStudent(struct Student *pStu) { pStu-&gt;score &#43;= 5.0; } 结构体作为函数返回值 # struct Student createStudent(int id, char *name, float score) { struct Student stu; stu.id = id; strcpy(stu.name, name); stu.score = score; return stu; } 结构体嵌套 # struct Date { int year; int month; int day; }; struct Employee { int id; char name[20]; struct Date birthday; // 结构体嵌套 float salary; }; // 初始化嵌套结构体 struct Employee emp = { 1001, &#34;张三&#34;, {1990, 5, 15}, // 嵌套结构体初始化 8000.0 }; // 访问嵌套成员 printf(&#34;出生年份：%d\n&#34;, emp.birthday.year); 结构体指针数组 # struct Student *pStu[3]; for(int i = 0; i &lt; 3; i&#43;&#43;) { pStu[i] = &amp;class[i]; // class为结构体数组 } 动态分配结构体 # #include &lt;stdlib.h&gt; // 动态分配单个结构体 struct Student *p = (struct Student*)malloc(sizeof(struct Student)); // 动态分配结构体数组 struct Student *pArray = (struct Student*)malloc(10 * sizeof(struct Student)); // 使用后释放内存 free(p); free(pArray); 结构体对齐（内存对齐） # struct Example1 { // 占用12字节 char a; // 1字节 int b; // 4字节（偏移量从4开始） char c; // 1字节 }; // 补齐到12字节 struct Example2 { // 占用8字节 char a; // 1字节 char c; // 1字节 int b; // 4字节 }; // 补齐到8字节 位域（Bit Fields） # struct Status { unsigned int isReady : 1; // 1位 unsigned int isError : 1; // 1位 unsigned int code : 4; // 4位 unsigned int : 2; // 2位未使用 }; 柔性数组（C99） # struct DynamicArray { int length; int data[]; // 柔性数组成员 }; 结构体比较 # // 不能直接比较结构体，需要逐个比较成员 int compareStudents(struct Student s1, struct Student s2) { return s1.id == s2.id &amp;&amp; strcmp(s1.name, s2.name) == 0; } 结构体复制 # // 可以直接赋值（浅拷贝） struct Student stu1 = {1001, &#34;张三&#34;, 85.5}; struct Student stu2 = stu1; // 深拷贝需要手动实现 void deepCopyStudent(struct Student *dest, const struct Student *src) { dest-&gt;id = src-&gt;id; strcpy(dest-&gt;name, src-&gt;name); dest-&gt;score = src-&gt;score; }">
@@ -274,10 +274,10 @@ void deepCopyStudent(struct Student *dest, const struct Student *src) {
 <title>Cstruct | Yuoek</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:1313/docs/example/snippets/c/cstruct/">
+<link rel="canonical" href="http://localhost:39043/docs/example/snippets/c/cstruct/">
 <link rel="stylesheet" href="/book.min.cc624ff1376052746239610f5efea0eec3ba49e0489b9190bdabed9a1bbd0737.css" integrity="sha256-zGJP8TdgUnRiOWEPXv6g7sO6SeBIm5GQvavtmhu9Bzc=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.af91ca8a69cf60aeb0963d28147c4896e8324ef6222b72cb0af1a32054a23761.js" integrity="sha256-r5HKimnPYK6wlj0oFHxIlugyTvYiK3LLCvGjIFSiN2E=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.5c9887e804666e3adac3dd894fa9bc8cfe7b841cd2e3669339cdd486c37a3ef8.js" integrity="sha256-XJiH6ARmbjraw92JT6m8jP57hBzS42aTOc3UhsN6Pvg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -881,7 +881,39 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/README/" class="">每日清单</a>
+    <input type="checkbox" id="section-5cd97156418717154dc9b678600097a4" class="toggle"  />
+    <label for="section-5cd97156418717154dc9b678600097a4" class="flex">
+      <a role="button" class="flex-auto ">题解</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-42178b60598f5a4791e49bb322264018" class="toggle"  />
+    <label for="section-42178b60598f5a4791e49bb322264018" class="flex">
+      <a href="/docs/solution/day/" class="flex-auto ">每日一题</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/day/day2/" class="">day 2</a>
   
 
         </li>
@@ -894,14 +926,16 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-5cd97156418717154dc9b678600097a4" class="toggle"  />
-    <label for="section-5cd97156418717154dc9b678600097a4" class="flex">
-      <a role="button" class="flex-auto ">Solution</a>
-    </label>
+    <a href="/docs/solution/day/day1/" class="">day 1</a>
   
 
-          
-  <ul>
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
     
       
         <li>
@@ -940,19 +974,6 @@ https://github.com/alex-shpak/hugo-book
           
   <ul>
     
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/solution/luogu/day1/" class="">Day1</a>
-  
-
-        </li>
-      
-    
   </ul>
 
         </li>
@@ -980,6 +1001,19 @@ https://github.com/alex-shpak/hugo-book
       
     
   </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/README/" class="">每日清单</a>
+  
 
         </li>
       

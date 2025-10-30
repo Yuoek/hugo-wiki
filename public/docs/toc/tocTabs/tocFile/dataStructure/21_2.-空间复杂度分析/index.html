@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=39043&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
@@ -335,7 +335,7 @@ B&#43;树索引空间需求
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/toc/tocTabs/tocFile/dataStructure/21_2.-%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39043/docs/toc/tocTabs/tocFile/dataStructure/21_2.-%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/">
   <meta property="og:site_name" content="Yuoek">
   <meta property="og:title" content="2. 空间复杂度分析">
   <meta property="og:description" content="空间复杂度基础概念 # 空间复杂度定义 # 算法执行所需存储空间与问题规模的关系 固定空间需求分析 可变空间需求分析 空间复杂度表示方法 # 大O表示法 空间复杂度函数 最坏情况与平均情况分析 基本数据结构空间复杂度 # 数组空间复杂度 # 一维数组空间占用分析 多维数组空间计算 动态数组空间复杂度 链表空间复杂度 # 单链表节点空间分析 双向链表空间需求 循环链表空间特性 栈与队列空间复杂度 # 顺序栈空间分配 链式栈空间使用 队列实现方式与空间效率 树结构空间复杂度 # 二叉树空间分析 # 普通二叉树空间需求 完全二叉树空间优化 二叉搜索树空间特性 平衡树空间复杂度 # AVL树空间使用 红黑树空间效率 B树空间分配策略 堆结构空间分析 # 二叉堆空间需求 斐波那契堆空间特性 优先队列空间复杂度 图结构空间复杂度 # 图的存储结构空间分析 # 邻接矩阵空间复杂度 邻接表空间需求计算 十字链表空间使用 特殊图结构空间特性 # 稠密图空间效率 稀疏图空间优化 有向图与无向图空间差异 哈希结构空间复杂度 # 哈希表空间分析 # 开放地址法空间需求 链地址法空间使用 哈希函数与空间效率关系 哈希冲突处理空间代价 # 线性探测空间特性 二次探测空间需求 双重哈希空间复杂度 递归算法空间复杂度 # 递归调用空间分析 # 递归栈空间使用 尾递归空间优化 递归深度与空间关系 分治算法空间特性 # 归并排序空间复杂度 快速排序空间需求 分治策略空间代价 动态规划空间复杂度 # 动态规划空间分析 # 状态转移方程空间需求 记忆化搜索空间使用 空间优化技巧 背包问题空间特性 # 0-1背包空间复杂度 完全背包空间优化 多重背包空间需求 字符串算法空间复杂度 # 字符串匹配空间分析 # KMP算法空间需求 BM算法空间使用 后缀数组空间复杂度 字典树空间特性 # Trie树空间需求 后缀树空间复杂度 AC自动机空间使用 空间复杂度优化策略 # 空间换时间策略 # 缓存技术空间代价 预计算空间需求 索引结构空间优化 空间复用技术 # 原地算法空间特性 空间回收机制 内存池技术应用 实际应用中的空间复杂度 # 数据库索引空间分析 # B&#43;树索引空间需求 哈希索引空间使用 全文索引空间复杂度 文件系统空间特性 # 文件存储空间分配 目录结构空间需求 压缩算法空间效率 空间复杂度与时间复杂度权衡 # 空间时间权衡原则 # 算法选择的空间考虑 资源约束下的优化策略 实际应用中的平衡点 案例分析 # 经典算法空间效率比较 实际项目空间优化经验 性能测试中的空间指标">
@@ -347,10 +347,10 @@ B&#43;树索引空间需求
 <title>2. 空间复杂度分析 | Yuoek</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:1313/docs/toc/tocTabs/tocFile/dataStructure/21_2.-%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/">
+<link rel="canonical" href="http://localhost:39043/docs/toc/tocTabs/tocFile/dataStructure/21_2.-%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/">
 <link rel="stylesheet" href="/book.min.cc624ff1376052746239610f5efea0eec3ba49e0489b9190bdabed9a1bbd0737.css" integrity="sha256-zGJP8TdgUnRiOWEPXv6g7sO6SeBIm5GQvavtmhu9Bzc=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.af91ca8a69cf60aeb0963d28147c4896e8324ef6222b72cb0af1a32054a23761.js" integrity="sha256-r5HKimnPYK6wlj0oFHxIlugyTvYiK3LLCvGjIFSiN2E=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.5c9887e804666e3adac3dd894fa9bc8cfe7b841cd2e3669339cdd486c37a3ef8.js" integrity="sha256-XJiH6ARmbjraw92JT6m8jP57hBzS42aTOc3UhsN6Pvg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -954,7 +954,39 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/README/" class="">每日清单</a>
+    <input type="checkbox" id="section-5cd97156418717154dc9b678600097a4" class="toggle"  />
+    <label for="section-5cd97156418717154dc9b678600097a4" class="flex">
+      <a role="button" class="flex-auto ">题解</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-42178b60598f5a4791e49bb322264018" class="toggle"  />
+    <label for="section-42178b60598f5a4791e49bb322264018" class="flex">
+      <a href="/docs/solution/day/" class="flex-auto ">每日一题</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/day/day2/" class="">day 2</a>
   
 
         </li>
@@ -967,14 +999,16 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-5cd97156418717154dc9b678600097a4" class="toggle"  />
-    <label for="section-5cd97156418717154dc9b678600097a4" class="flex">
-      <a role="button" class="flex-auto ">Solution</a>
-    </label>
+    <a href="/docs/solution/day/day1/" class="">day 1</a>
   
 
-          
-  <ul>
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
     
       
         <li>
@@ -1013,19 +1047,6 @@ https://github.com/alex-shpak/hugo-book
           
   <ul>
     
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/solution/luogu/day1/" class="">Day1</a>
-  
-
-        </li>
-      
-    
   </ul>
 
         </li>
@@ -1053,6 +1074,19 @@ https://github.com/alex-shpak/hugo-book
       
     
   </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/README/" class="">每日清单</a>
+  
 
         </li>
       

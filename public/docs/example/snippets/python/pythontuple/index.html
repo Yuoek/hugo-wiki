@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=39043&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
@@ -128,7 +128,7 @@ print(my_tuple)        # (1, 2, [3, 4, 5])
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/example/snippets/python/pythontuple/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39043/docs/example/snippets/python/pythontuple/">
   <meta property="og:site_name" content="Yuoek">
   <meta property="og:title" content="Yuoek">
   <meta property="og:description" content="pythontuple # 创建元组 # # 方法1：使用圆括号 tuple1 = (1, 2, 3, 4, 5) tuple2 = (&#39;a&#39;, &#39;b&#39;, &#39;c&#39;) # 方法2：使用tuple()构造函数 tuple3 = tuple([1, 2, 3]) # (1, 2, 3) tuple4 = tuple(&#39;hello&#39;) # (&#39;h&#39;, &#39;e&#39;, &#39;l&#39;, &#39;l&#39;, &#39;o&#39;) # 单元素元组（注意逗号） single_tuple = (1,) # 正确 not_tuple = (1) # 错误，这是整数1 访问元素 # my_tuple = (10, 20, 30, 40, 50) print(my_tuple[0]) # 10 print(my_tuple[-1]) # 50 print(my_tuple[1:3]) # (20, 30) 元组拆包 # # 基本拆包 a, b, c = (1, 2, 3) print(a, b, c) # 1 2 3 # 使用*收集剩余元素 first, *middle, last = (1, 2, 3, 4, 5) print(first) # 1 print(middle) # [2, 3, 4] print(last) # 5 计数 count() # my_tuple = (1, 2, 2, 3, 2, 4) print(my_tuple.count(2)) # 3 查找索引 index() # my_tuple = (&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;b&#39;) print(my_tuple.index(&#39;b&#39;)) # 1 print(my_tuple.index(&#39;b&#39;, 2)) # 3（从索引2开始查找） 数据完整性 # # 坐标点（不希望被修改） point = (100, 200) # point[0] = 150 # 报错：元组不可修改 字典键 # # 元组可作为字典键（列表不行） coordinates_dict = {(1, 2): &#39;A点&#39;, (3, 4): &#39;B点&#39;} 函数多返回值 # def get_user_info(): return &#39;张三&#39;, 25, &#39;北京&#39; name, age, city = get_user_info() 交换变量值 # a, b = 10, 20 a, b = b, a # 交换a和b的值 print(a, b) # 20 10 命名元组 # from collections import namedtuple # 创建命名元组类型 Point = namedtuple(&#39;Point&#39;, [&#39;x&#39;, &#39;y&#39;]) p = Point(10, 20) print(p.x, p.y) # 10 20 可变对象可修改 # my_tuple = (1, 2, [3, 4]) my_tuple[2].append(5) # 允许：修改的是列表内容 print(my_tuple) # (1, 2, [3, 4, 5])">
@@ -139,10 +139,10 @@ print(my_tuple)        # (1, 2, [3, 4, 5])
 <title>Pythontuple | Yuoek</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:1313/docs/example/snippets/python/pythontuple/">
+<link rel="canonical" href="http://localhost:39043/docs/example/snippets/python/pythontuple/">
 <link rel="stylesheet" href="/book.min.cc624ff1376052746239610f5efea0eec3ba49e0489b9190bdabed9a1bbd0737.css" integrity="sha256-zGJP8TdgUnRiOWEPXv6g7sO6SeBIm5GQvavtmhu9Bzc=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.af91ca8a69cf60aeb0963d28147c4896e8324ef6222b72cb0af1a32054a23761.js" integrity="sha256-r5HKimnPYK6wlj0oFHxIlugyTvYiK3LLCvGjIFSiN2E=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.5c9887e804666e3adac3dd894fa9bc8cfe7b841cd2e3669339cdd486c37a3ef8.js" integrity="sha256-XJiH6ARmbjraw92JT6m8jP57hBzS42aTOc3UhsN6Pvg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -746,7 +746,39 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/README/" class="">每日清单</a>
+    <input type="checkbox" id="section-5cd97156418717154dc9b678600097a4" class="toggle"  />
+    <label for="section-5cd97156418717154dc9b678600097a4" class="flex">
+      <a role="button" class="flex-auto ">题解</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-42178b60598f5a4791e49bb322264018" class="toggle"  />
+    <label for="section-42178b60598f5a4791e49bb322264018" class="flex">
+      <a href="/docs/solution/day/" class="flex-auto ">每日一题</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/day/day2/" class="">day 2</a>
   
 
         </li>
@@ -759,14 +791,16 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-5cd97156418717154dc9b678600097a4" class="toggle"  />
-    <label for="section-5cd97156418717154dc9b678600097a4" class="flex">
-      <a role="button" class="flex-auto ">Solution</a>
-    </label>
+    <a href="/docs/solution/day/day1/" class="">day 1</a>
   
 
-          
-  <ul>
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
     
       
         <li>
@@ -805,19 +839,6 @@ https://github.com/alex-shpak/hugo-book
           
   <ul>
     
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/solution/luogu/day1/" class="">Day1</a>
-  
-
-        </li>
-      
-    
   </ul>
 
         </li>
@@ -845,6 +866,19 @@ https://github.com/alex-shpak/hugo-book
       
     
   </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/README/" class="">每日清单</a>
+  
 
         </li>
       

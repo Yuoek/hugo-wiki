@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=39043&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
@@ -275,7 +275,7 @@
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/toc/tocTabs/tocFile/dp/13_%E7%8A%B6%E6%80%81%E7%A9%BA%E9%97%B4%E5%88%86%E6%9E%90/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39043/docs/toc/tocTabs/tocFile/dp/13_%E7%8A%B6%E6%80%81%E7%A9%BA%E9%97%B4%E5%88%86%E6%9E%90/">
   <meta property="og:site_name" content="Yuoek">
   <meta property="og:title" content="状态空间分析">
   <meta property="og:description" content="第一章 动态规划基础理论 # 1.1 动态规划基本概念 # 最优子结构性质 重叠子问题性质 无后效性原理 状态转移方程 边界条件确定 1.2 动态规划求解步骤 # 问题分析与建模 状态定义与设计 状态转移方程建立 初始条件设置 计算顺序确定 最优解重构 第二章 状态空间理论基础 # 2.1 状态空间基本概念 # 状态定义与表示 状态变量选择 状态维度分析 状态空间大小估计 状态编码方法 2.2 状态空间分类 # 离散状态空间 连续状态空间 混合状态空间 高维状态空间 稀疏状态空间 第三章 状态空间优化技术 # 3.1 状态压缩技术 # 位运算状态压缩 状态哈希映射 状态离散化方法 状态合并策略 状态等价类划分 3.2 状态空间剪枝 # 可行性剪枝 最优性剪枝 记忆化搜索 状态重复检测 状态可达性分析 第四章 典型问题状态空间分析 # 4.1 背包问题状态空间 # 0-1背包状态设计 完全背包状态优化 多重背包状态压缩 分组背包状态表示 二维费用背包状态扩展 4.2 序列问题状态空间 # 最长公共子序列状态 最长递增子序列状态 编辑距离状态设计 序列比对状态空间 字符串匹配状态表示 4.3 图论问题状态空间 # 最短路径状态表示 旅行商问题状态压缩 网络流状态设计 树形DP状态定义 状态机模型状态转移 第五章 状态空间复杂度分析 # 5.1 时间复杂度分析 # 状态数目计算 转移代价分析 优化前后对比 渐进复杂度估计 实际运行时间预测 5.2 空间复杂度分析 # 状态存储需求 空间优化策略 滚动数组技术 内存访问模式 缓存友好设计 第六章 高级状态空间技术 # 6.1 状态空间分解 # 分层状态设计 状态空间划分 并行状态计算 分布式状态处理 增量状态更新 6.2 近似状态空间 # 状态空间采样 状态聚合方法 状态抽象技术 启发式状态搜索 蒙特卡洛状态估计 第七章 实际应用案例分析 # 7.1 组合优化问题 # 调度问题状态设计 资源分配状态空间 路径规划状态表示 排产问题状态优化 布局问题状态压缩 7.2 人工智能应用 # 游戏AI状态空间 强化学习状态表示 规划问题状态设计 决策问题状态优化 机器学习中的状态空间 第八章 状态空间分析工具与实践 # 8.1 分析工具与方法 # 状态空间可视化 状态转移图绘制 状态空间搜索工具 性能分析工具 调试与优化技巧 8.2 实践指导 # 状态设计最佳实践 常见错误与避免 代码实现技巧 测试用例设计 性能调优方法">
@@ -287,10 +287,10 @@
 <title>状态空间分析 | Yuoek</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:1313/docs/toc/tocTabs/tocFile/dp/13_%E7%8A%B6%E6%80%81%E7%A9%BA%E9%97%B4%E5%88%86%E6%9E%90/">
+<link rel="canonical" href="http://localhost:39043/docs/toc/tocTabs/tocFile/dp/13_%E7%8A%B6%E6%80%81%E7%A9%BA%E9%97%B4%E5%88%86%E6%9E%90/">
 <link rel="stylesheet" href="/book.min.cc624ff1376052746239610f5efea0eec3ba49e0489b9190bdabed9a1bbd0737.css" integrity="sha256-zGJP8TdgUnRiOWEPXv6g7sO6SeBIm5GQvavtmhu9Bzc=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.af91ca8a69cf60aeb0963d28147c4896e8324ef6222b72cb0af1a32054a23761.js" integrity="sha256-r5HKimnPYK6wlj0oFHxIlugyTvYiK3LLCvGjIFSiN2E=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.5c9887e804666e3adac3dd894fa9bc8cfe7b841cd2e3669339cdd486c37a3ef8.js" integrity="sha256-XJiH6ARmbjraw92JT6m8jP57hBzS42aTOc3UhsN6Pvg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -894,7 +894,39 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/README/" class="">每日清单</a>
+    <input type="checkbox" id="section-5cd97156418717154dc9b678600097a4" class="toggle"  />
+    <label for="section-5cd97156418717154dc9b678600097a4" class="flex">
+      <a role="button" class="flex-auto ">题解</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-42178b60598f5a4791e49bb322264018" class="toggle"  />
+    <label for="section-42178b60598f5a4791e49bb322264018" class="flex">
+      <a href="/docs/solution/day/" class="flex-auto ">每日一题</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/day/day2/" class="">day 2</a>
   
 
         </li>
@@ -907,14 +939,16 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-5cd97156418717154dc9b678600097a4" class="toggle"  />
-    <label for="section-5cd97156418717154dc9b678600097a4" class="flex">
-      <a role="button" class="flex-auto ">Solution</a>
-    </label>
+    <a href="/docs/solution/day/day1/" class="">day 1</a>
   
 
-          
-  <ul>
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
     
       
         <li>
@@ -953,19 +987,6 @@ https://github.com/alex-shpak/hugo-book
           
   <ul>
     
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/solution/luogu/day1/" class="">Day1</a>
-  
-
-        </li>
-      
-    
   </ul>
 
         </li>
@@ -993,6 +1014,19 @@ https://github.com/alex-shpak/hugo-book
       
     
   </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/README/" class="">每日清单</a>
+  
 
         </li>
       

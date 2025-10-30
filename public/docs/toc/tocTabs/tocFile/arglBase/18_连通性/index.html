@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=39043&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
@@ -222,7 +222,7 @@ GPU加速算法
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/toc/tocTabs/tocFile/arglBase/18_%E8%BF%9E%E9%80%9A%E6%80%A7/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39043/docs/toc/tocTabs/tocFile/arglBase/18_%E8%BF%9E%E9%80%9A%E6%80%A7/">
   <meta property="og:site_name" content="Yuoek">
   <meta property="og:title" content="连通性">
   <meta property="og:description" content="第一章 图论基础 # 1.1 图的基本概念 # 图的定义与分类 顶点、边、权重的概念 有向图与无向图 简单图与多重图 图的表示方法：邻接矩阵、邻接表 1.2 图的遍历算法 # 深度优先搜索（DFS） 广度优先搜索（BFS） 遍历算法的应用场景 遍历的时间复杂度分析 第二章 连通性概念 # 2.1 无向图连通性 # 连通图与连通分量 连通性的判定条件 割点与桥 双连通分量 2.2 有向图连通性 # 强连通分量 弱连通分量 Kosaraju算法 Tarjan算法 第三章 连通性算法 # 3.1 最小生成树算法 # Kruskal算法原理与实现 Prim算法原理与实现 最小生成树的应用 算法复杂度比较 3.2 最短路径算法 # Dijkstra算法 Bellman-Ford算法 Floyd-Warshall算法 最短路径的应用场景 3.3 网络流算法 # 最大流最小割定理 Ford-Fulkerson方法 Edmonds-Karp算法 Dinic算法 第四章 高级连通性问题 # 4.1 平面图连通性 # 平面图的定义与性质 欧拉公式 平面图的连通性判定 平面图的可平面性测试 4.2 动态连通性 # 并查集数据结构 动态连通性问题 路径压缩与按秩合并 在线算法与离线算法 第五章 实际应用 # 5.1 社交网络分析 # 社区发现算法 影响力传播模型 网络中心性度量 小世界现象 5.2 计算机网络 # 网络拓扑结构 路由算法 网络可靠性分析 容错机制设计 5.3 生物信息学 # 蛋白质相互作用网络 基因调控网络 代谢通路分析 系统生物学应用 第六章 算法优化与扩展 # 6.1 并行连通性算法 # 并行BFS算法 并行连通分量算法 MapReduce实现 GPU加速算法 6.2 近似算法 # 连通性近似算法 随机化算法 近似比分析 实际应用中的权衡 6.3 大数据场景下的连通性 # 流式图算法 图数据库中的连通性查询 分布式图计算框架 增量式连通性维护">
@@ -234,10 +234,10 @@ GPU加速算法
 <title>连通性 | Yuoek</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:1313/docs/toc/tocTabs/tocFile/arglBase/18_%E8%BF%9E%E9%80%9A%E6%80%A7/">
+<link rel="canonical" href="http://localhost:39043/docs/toc/tocTabs/tocFile/arglBase/18_%E8%BF%9E%E9%80%9A%E6%80%A7/">
 <link rel="stylesheet" href="/book.min.cc624ff1376052746239610f5efea0eec3ba49e0489b9190bdabed9a1bbd0737.css" integrity="sha256-zGJP8TdgUnRiOWEPXv6g7sO6SeBIm5GQvavtmhu9Bzc=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.af91ca8a69cf60aeb0963d28147c4896e8324ef6222b72cb0af1a32054a23761.js" integrity="sha256-r5HKimnPYK6wlj0oFHxIlugyTvYiK3LLCvGjIFSiN2E=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.5c9887e804666e3adac3dd894fa9bc8cfe7b841cd2e3669339cdd486c37a3ef8.js" integrity="sha256-XJiH6ARmbjraw92JT6m8jP57hBzS42aTOc3UhsN6Pvg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -841,7 +841,39 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/README/" class="">每日清单</a>
+    <input type="checkbox" id="section-5cd97156418717154dc9b678600097a4" class="toggle"  />
+    <label for="section-5cd97156418717154dc9b678600097a4" class="flex">
+      <a role="button" class="flex-auto ">题解</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-42178b60598f5a4791e49bb322264018" class="toggle"  />
+    <label for="section-42178b60598f5a4791e49bb322264018" class="flex">
+      <a href="/docs/solution/day/" class="flex-auto ">每日一题</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/day/day2/" class="">day 2</a>
   
 
         </li>
@@ -854,14 +886,16 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-5cd97156418717154dc9b678600097a4" class="toggle"  />
-    <label for="section-5cd97156418717154dc9b678600097a4" class="flex">
-      <a role="button" class="flex-auto ">Solution</a>
-    </label>
+    <a href="/docs/solution/day/day1/" class="">day 1</a>
   
 
-          
-  <ul>
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
     
       
         <li>
@@ -900,19 +934,6 @@ https://github.com/alex-shpak/hugo-book
           
   <ul>
     
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/solution/luogu/day1/" class="">Day1</a>
-  
-
-        </li>
-      
-    
   </ul>
 
         </li>
@@ -940,6 +961,19 @@ https://github.com/alex-shpak/hugo-book
       
     
   </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/README/" class="">每日清单</a>
+  
 
         </li>
       
