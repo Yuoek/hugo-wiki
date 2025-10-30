@@ -4993,6 +4993,33 @@ https://github.com/alex-shpak/hugo-book
   </div>
 </details>
 </blockquote>
+<blockquote class="book-hint info">
+<details ><summary>解法</summary>
+  <div class="markdown-inner">
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt; </span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> m, n;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> cnt1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, cnt2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> sum1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, sum2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scanf</span>(<span style="color:#e6db74">&#34;%d%d&#34;</span>, <span style="color:#f92672">&amp;</span>m, <span style="color:#f92672">&amp;</span>n);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> m; i<span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(i <span style="color:#f92672">%</span> n <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>){
+</span></span><span style="display:flex;"><span>      cnt1<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>      sum1 <span style="color:#f92672">+=</span> i;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>      cnt2<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>      sum2 <span style="color:#f92672">+=</span> i;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%.1f %.1f&#34;</span>, (<span style="color:#66d9ef">double</span>)sum1 <span style="color:#f92672">/</span> cnt1, (<span style="color:#66d9ef">double</span>)sum2 <span style="color:#f92672">/</span> cnt2);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+  </div>
+</details>
+</blockquote>
 <h3 id="力扣--两数之和">
   力扣 | <a href="https://leetcode.cn/problems/two-sum/description/">两数之和</a>
   
@@ -5038,6 +5065,46 @@ https://github.com/alex-shpak/hugo-book
 <p>&nbsp;</p>
 <p><strong>进阶：</strong>你可以想出一个时间复杂度小于 <code>O(n<sup>2</sup>)</code> 的算法吗？</p>
 <!-- description:end -->
+  </div>
+</details>
+</blockquote>
+<blockquote class="book-hint info">
+<details ><summary>解法 </summary>
+  <div class="markdown-inner">
+    <div class="book-tabs">
+<input type="radio" class="toggle" name="tabs-id" id="tabs-id-0" checked="checked" />
+<label for="tabs-id-0">c </label>
+<div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Note: The returned array must be malloced, assume caller calls free().
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span><span style="color:#f92672">*</span> <span style="color:#a6e22e">twoSum</span>(<span style="color:#66d9ef">int</span><span style="color:#f92672">*</span> nums, <span style="color:#66d9ef">int</span> numsSize, <span style="color:#66d9ef">int</span> target, <span style="color:#66d9ef">int</span><span style="color:#f92672">*</span> returnSize) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span><span style="color:#f92672">*</span> result <span style="color:#f92672">=</span> (<span style="color:#66d9ef">int</span><span style="color:#f92672">*</span>)<span style="color:#a6e22e">malloc</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span><span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">int</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">*</span>returnSize <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> numsSize; i<span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>; j <span style="color:#f92672">&lt;</span> numsSize; j<span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>(target <span style="color:#f92672">==</span> nums[i] <span style="color:#f92672">+</span> nums[j]){
+</span></span><span style="display:flex;"><span>                result[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> i;
+</span></span><span style="display:flex;"><span>                result[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> j;
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> result;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">*</span>returnSize <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> NULL;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div>
+<input type="radio" class="toggle" name="tabs-id" id="tabs-id-1"  />
+<label for="tabs-id-1">python</label>
+<div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">twoSum</span>(self, nums: List[int], target: int) <span style="color:#f92672">-&gt;</span> List[int]:
+</span></span><span style="display:flex;"><span>        d <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> i, x <span style="color:#f92672">in</span> enumerate(nums):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (y <span style="color:#f92672">:=</span> target <span style="color:#f92672">-</span> x) <span style="color:#f92672">in</span> d:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> [d[y], i]
+</span></span><span style="display:flex;"><span>            d[x] <span style="color:#f92672">=</span> i
+</span></span></code></pre></div></div>
+</div>
   </div>
 </details>
 </blockquote>

@@ -189,6 +189,35 @@ int main(){
 {{% /hint %}}
 
 
+{{% hint info %}}
+{{% details "解法" %}}
+```c 
+#include <stdio.h> 
+int main(){
+  int m, n;
+  int cnt1 = 0, cnt2 = 0;
+  int sum1 = 0, sum2 = 0;
+  scanf("%d%d", &m, &n);
+  for(int i = 1; i <= m; i++){
+    if(i % n == 0){
+      cnt1++;
+      sum1 += i;
+
+    }
+    else {
+      cnt2++;
+      sum2 += i;
+    }
+  }
+  printf("%.1f %.1f", (double)sum1 / cnt1, (double)sum2 / cnt2);
+
+}
+
+```
+{{% /details %}}
+{{% /hint %}}
+
+
 ### 力扣 | [两数之和](https://leetcode.cn/problems/two-sum/description/)
 
 {{% hint info %}}
@@ -246,3 +275,52 @@ int main(){
 {{% /details %}}
 {{% /hint %}}
 
+
+{{% hint info %}}
+{{% details "解法 " %}}
+
+{{< tabs id >}}
+{{% tab "c " %}}
+
+```c 
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
+    int* result = (int*)malloc(2*sizeof(int));
+    *returnSize = 2;
+    for(int i = 0; i < numsSize; i++){
+        for(int j = i + 1; j < numsSize; j++){
+            if(target == nums[i] + nums[j]){
+                result[0] = i;
+                result[1] = j;
+                return result;
+            }
+        }
+    }
+
+    *returnSize = 0;
+    return NULL;
+}
+```
+
+{{% /tab %}}
+{{% tab "python" %}}
+```python 
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        d = {}
+        for i, x in enumerate(nums):
+            if (y := target - x) in d:
+                return [d[y], i]
+            d[x] = i
+
+```
+
+
+{{% /tab %}}
+
+{{< /tabs>}}
+
+{{% /details %}}
+{{% /hint %}}
