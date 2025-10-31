@@ -16,7 +16,7 @@
   
 
 
-  牛客 | 模板-差分
+  牛客 | 扫雷 MINE
   
   #
   
@@ -25,10 +25,10 @@
 题目
   
     
-  模板-差分
+  扫雷 MINE
 #
 
-题号：NC226303
+题号：NC20241
 时间限制：C/C&#43;&#43;/Rust/Pascal 1秒，其他语言2秒
 空间限制：C/C&#43;&#43;/Rust/Pascal 256 M，其他语言512 M
 64bit IO Format: %lld
@@ -36,18 +36,20 @@
   题目描述
 #
 
-对于给定的长度为 $n$ 的数组 ${a_1, a_2, &hellip;, a_n}$，我们有 $m$ 次修改操作，每一次操作给出三个参数 $l, r, k$，代表将数组中的 $a_l, a_{l&#43;1}, &hellip;, a_r$都加上 $k$。请你直接输出全部操作完成后的数组。">
+相信大家都玩过扫雷的游戏。那是在一个 $n*m$ 的矩阵里面有一些雷，要你根据一些信息找出雷来。
+万圣节到了 ，“余”人国流行起了一种简单的扫雷游戏，这个游戏规则和扫雷一样，如果某个格子没有雷，那么它里面的数字 表示和它8连通的格子里面雷的数目。
+现在棋盘是 $n×2$ 的，第一列里面某些格子是雷，而第二列没有雷，如下图： 由于第一列的雷可能有多种方案满足第二列的数的限制，你的任务即根据第二列的信息确定第一列雷有多少种摆放方案。">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39043/docs/solution/day/day2/">
   <meta property="og:site_name" content="Yuoek">
   <meta property="og:title" content="day 2">
-  <meta property="og:description" content="第 2 天 # 牛客 | 模板-差分 # 题目 模板-差分 #
-题号：NC226303
+  <meta property="og:description" content="第 2 天 # 牛客 | 扫雷 MINE # 题目 扫雷 MINE #
+题号：NC20241
 时间限制：C/C&#43;&#43;/Rust/Pascal 1秒，其他语言2秒
 空间限制：C/C&#43;&#43;/Rust/Pascal 256 M，其他语言512 M 64bit IO Format: %lld
 题目描述 #
-对于给定的长度为 $n$ 的数组 ${a_1, a_2, …, a_n}$，我们有 $m$ 次修改操作，每一次操作给出三个参数 $l, r, k$，代表将数组中的 $a_l, a_{l&#43;1}, …, a_r$都加上 $k$。请你直接输出全部操作完成后的数组。">
+相信大家都玩过扫雷的游戏。那是在一个 $n*m$ 的矩阵里面有一些雷，要你根据一些信息找出雷来。 万圣节到了 ，“余”人国流行起了一种简单的扫雷游戏，这个游戏规则和扫雷一样，如果某个格子没有雷，那么它里面的数字 表示和它8连通的格子里面雷的数目。 现在棋盘是 $n×2$ 的，第一列里面某些格子是雷，而第二列没有雷，如下图： 由于第一列的雷可能有多种方案满足第二列的数的限制，你的任务即根据第二列的信息确定第一列雷有多少种摆放方案。">
   <meta property="og:locale" content="zh">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -4833,7 +4835,7 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#第-2-天">第 2 天</a>
           <ul>
-            <li><a href="#牛客--模板-差分">牛客 | <a href="https://ac.nowcoder.com/acm/problem/226303">模板-差分</a></a></li>
+            <li><a href="#牛客--扫雷-mine">牛客 | <a href="https://ac.nowcoder.com/acm/problem/20241">扫雷 MINE</a></a></li>
             <li><a href="#洛谷--蓝桥杯-2024-省-b---好数">洛谷 | <a href="https://www.luogu.com.cn/problem/P10424">蓝桥杯 2024 省 B - 好数</a></a></li>
             <li><a href="#力扣--给小朋友们分糖果-i">力扣 | <a href="https://leetcode.cn/problems/distribute-candies-among-children-i/description/">给小朋友们分糖果 I</a></a></li>
           </ul>
@@ -4873,20 +4875,20 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#%e7%ac%ac-2-%e5%a4%a9">#</a>
   
 </h2>
-<h3 id="牛客--模板-差分">
-  牛客 | <a href="https://ac.nowcoder.com/acm/problem/226303">模板-差分</a>
+<h3 id="牛客--扫雷-mine">
+  牛客 | <a href="https://ac.nowcoder.com/acm/problem/20241">扫雷 MINE</a>
   
-  <a class="anchor" href="#%e7%89%9b%e5%ae%a2--%e6%a8%a1%e6%9d%bf-%e5%b7%ae%e5%88%86">#</a>
+  <a class="anchor" href="#%e7%89%9b%e5%ae%a2--%e6%89%ab%e9%9b%b7-mine">#</a>
   
 </h3>
 <blockquote class="book-hint info">
 <details ><summary>题目</summary>
   <div class="markdown-inner">
-    <h1 id="模板-差分">
-  模板-差分
-<p><a class="anchor" href="#%e6%a8%a1%e6%9d%bf-%e5%b7%ae%e5%88%86">#</a></p>
+    <h1 id="扫雷-mine">
+  扫雷 MINE
+<p><a class="anchor" href="#%e6%89%ab%e9%9b%b7-mine">#</a></p>
 </h1>
-<p>题号：NC226303</p>
+<p>题号：NC20241</p>
 <p>时间限制：C/C++/Rust/Pascal 1秒，其他语言2秒</p>
 <p>空间限制：C/C++/Rust/Pascal 256 M，其他语言512 M
 64bit IO Format: %lld</p>
@@ -4894,19 +4896,19 @@ https://github.com/alex-shpak/hugo-book
   题目描述
 <p><a class="anchor" href="#%e9%a2%98%e7%9b%ae%e6%8f%8f%e8%bf%b0">#</a></p>
 </h2>
-<p>对于给定的长度为 $n$ 的数组 ${a_1, a_2, &hellip;, a_n}$，我们有 $m$ 次修改操作，每一次操作给出三个参数 $l, r, k$，代表将数组中的 $a_l, a_{l+1}, &hellip;, a_r$都加上 $k$。请你直接输出全部操作完成后的数组。</p>
+<p>相信大家都玩过扫雷的游戏。那是在一个 $n*m$ 的矩阵里面有一些雷，要你根据一些信息找出雷来。
+万圣节到了 ，“余”人国流行起了一种简单的扫雷游戏，这个游戏规则和扫雷一样，如果某个格子没有雷，那么它里面的数字 表示和它8连通的格子里面雷的数目。
+现在棋盘是 $n×2$ 的，第一列里面某些格子是雷，而第二列没有雷，如下图： 由于第一列的雷可能有多种方案满足第二列的数的限制，你的任务即根据第二列的信息确定第一列雷有多少种摆放方案。</p>
 <h2 id="输入描述">
   输入描述
 <p><a class="anchor" href="#%e8%be%93%e5%85%a5%e6%8f%8f%e8%bf%b0">#</a></p>
 </h2>
-<p>第一行输入两个整数 $n, m$ 代表数组中的元素数量、操作次数。</p>
-<p>第二行输入 $a_1, a_2, &hellip;, a_n$ 个整数代表初始数组。</p>
-<p>此后 $m$ 行，每行输入三个整数代表一次操作。</p>
+<p>第一行为 $N$，第二行有 $N$ 个数，依次为第二列的格子中的数。$（1 ≤ N ≤ 10000）$</p>
 <h2 id="输出描述">
   输出描述
 <p><a class="anchor" href="#%e8%be%93%e5%87%ba%e6%8f%8f%e8%bf%b0">#</a></p>
 </h2>
-<p>在一行上输出个整数 $l, r, k$，代表全部操作完成后的数组。</p>
+<p>一个数，即第一列中雷的摆放方案数。</p>
 <h2 id="示例1">
   示例1
 <p><a class="anchor" href="#%e7%a4%ba%e4%be%8b1">#</a></p>
@@ -4915,15 +4917,13 @@ https://github.com/alex-shpak/hugo-book
   输入
 <p><a class="anchor" href="#%e8%be%93%e5%85%a5">#</a></p>
 </h3>
-<pre tabindex="0"><code>3 2
-1 2 3
-1 2 4
-3 3 -2
+<pre tabindex="0"><code>2
+1 1
 </code></pre><h3 id="输出">
   输出
 <p><a class="anchor" href="#%e8%be%93%e5%87%ba">#</a></p>
 </h3>
-<pre tabindex="0"><code>5 6 1
+<pre tabindex="0"><code>2
 </code></pre>
   </div>
 </details>
@@ -5269,7 +5269,7 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#第-2-天">第 2 天</a>
           <ul>
-            <li><a href="#牛客--模板-差分">牛客 | <a href="https://ac.nowcoder.com/acm/problem/226303">模板-差分</a></a></li>
+            <li><a href="#牛客--扫雷-mine">牛客 | <a href="https://ac.nowcoder.com/acm/problem/20241">扫雷 MINE</a></a></li>
             <li><a href="#洛谷--蓝桥杯-2024-省-b---好数">洛谷 | <a href="https://www.luogu.com.cn/problem/P10424">蓝桥杯 2024 省 B - 好数</a></a></li>
             <li><a href="#力扣--给小朋友们分糖果-i">力扣 | <a href="https://leetcode.cn/problems/distribute-candies-among-children-i/description/">给小朋友们分糖果 I</a></a></li>
           </ul>
