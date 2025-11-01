@@ -28,52 +28,32 @@ type: ""
 64bit IO Format: %lld
 
 ## 题目描述
-Etéreo 是个爱学习的好孩子。在年假期间，他依然热情于数学。他最近发现了一个高大上的东西：
-
-$$\Theta = \lim_{\nu \to \infty} \left(1 + \frac{1}{\nu}\right)^\nu$$
-
-他觉得这里的 $\Theta$ 非常的厉害！然后他又告诉你：
-
-$$\Psi = \underbrace{\Theta \times \Theta \times \Theta \times \cdots \times \Theta}_{\alpha个\Theta}$$
-
-$$\Omega = \underbrace{\Psi + \Psi + \Psi + \cdots + \Psi}_{\beta个\Psi}$$
-
-他会告诉你 $\alpha$ 和 $\beta$ ，想请你告诉他 $\Omega$ 的值。当然这是一个小数，所以请你在小数点后保留 $\gamma$ 位。
-
-Etéreo 是个“问题小子”，有很多询问，请你一一回答。
-
-注意，题中 $\Theta, \Psi, \Omega$ 都是实数。
+对于给定的长度为 $n$ 的数组 $\{a_1, a_2, \dots, a_n\}$，我们有 $m$ 次修改操作。每一次操作给出三个参数 $l, r, k$，代表将数组中的 $a_l, a_{l+1}, \dots, a_r$ 都加上 $k$。请直接输出全部操作完成后的数组。
 
 ## 输入描述
-第一行一个整数 $T$ ，表示 Etéreo 的询问个数。
-
-接下去 $T$ 行，每行三个整数 $\alpha, \beta, \gamma$ ，表示一个询问，意义同题目描述。
+1. 第一行输入两个整数 $n, m$（$1 \leq n, m \leq 10^5$），代表数组中的元素数量、操作次数。
+2. 第二行输入 $n$ 个整数 $a_1, a_2, \dots, a_n$（$-10^9 \leq a_i \leq 10^9$），代表初始数组。
+3. 此后 $m$ 行，每行输入三个整数 $l, r, k$（$1 \leq l \leq r \leq n$；$-10^9 \leq k \leq 10^9$），代表一次操作。
 
 ## 输出描述
-输出共 $T$ 行，每行一个小数，表示答案 $\Omega$ 。
+在一行上输出 $n$ 个整数，代表全部操作完成后的数组。
 
 ## 示例1
 ### 输入
 ```
-2
-5 196 1
-3 60 4
+3 2
+1 2 3
+1 2 4
+3 3 -2
 ```
 
 ### 输出
 ```
-29089.0
-1205.1322
+5 6 1
 ```
 
 ## 备注
-- $1 \leq \alpha \leq 10$
-- $1 \leq \beta \leq 200$
-- $1 \leq \gamma \leq 5$
-- $1 \leq T \leq 500$
-
-题中小数请尽量取精确值。中小数请尽量取精确值。
-
+在几乎全部的情况下，PyPy 的运行速度优于 Python，我们建议您选择对应版本的 PyPy 进行提交，而不是 Python。
 
 {{% /details %}}
 {{% /hint %}}
