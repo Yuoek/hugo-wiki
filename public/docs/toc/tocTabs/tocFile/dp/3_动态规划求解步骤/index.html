@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=39043&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
@@ -292,7 +292,7 @@
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39043/docs/toc/tocTabs/tocFile/dp/3_%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%B1%82%E8%A7%A3%E6%AD%A5%E9%AA%A4/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/toc/tocTabs/tocFile/dp/3_%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%B1%82%E8%A7%A3%E6%AD%A5%E9%AA%A4/">
   <meta property="og:site_name" content="Yuoek">
   <meta property="og:title" content="动态规划求解步骤">
   <meta property="og:description" content="一、动态规划基本概念 # 1.1 动态规划定义与特点 # 动态规划的基本思想 最优子结构性质 重叠子问题性质 无后效性原理 1.2 适用问题类型 # 最优化问题 计数问题 可行性问题 序列决策问题 1.3 与其他算法的比较 # 动态规划与分治法的区别 动态规划与贪心算法的区别 动态规划与回溯法的关系 二、动态规划求解步骤详解 # 2.1 问题分析与状态定义 # 识别最优子结构 确定状态变量 状态空间的设计原则 状态表示的技巧 2.2 状态转移方程建立 # 递推关系的推导 边界条件的确定 状态转移方程的数学表达 常见状态转移模式 2.3 初始条件设置 # 基础情况的确定 初始值的赋值 边界处理的方法 特殊情况考虑 2.4 计算顺序确定 # 自底向上方法 自顶向下方法 记忆化搜索技术 计算顺序优化策略 2.5 最优解构造 # 最优值的提取 最优解的追踪 路径重建方法 解空间的分析 三、动态规划实现技术 # 3.1 存储结构设计 # 一维数组的应用 二维数组的使用 多维状态的存储 空间优化技巧 3.2 时间复杂度分析 # 状态数量的计算 转移代价的评估 复杂度优化方法 实际性能考虑 3.3 空间复杂度优化 # 滚动数组技术 状态压缩方法 内存使用优化 空间-时间权衡 四、经典动态规划问题 # 4.1 线性动态规划 # 最长递增子序列 最大子数组和 编辑距离问题 背包问题系列 4.2 区间动态规划 # 矩阵链乘法 石子合并问题 最优二叉搜索树 括号匹配问题 4.3 树形动态规划 # 二叉树上的动态规划 树的最大独立集 树的重心问题 树上背包问题 4.4 状态压缩动态规划 # 旅行商问题 棋盘覆盖问题 集合划分问题 位运算技巧应用 五、动态规划进阶技巧 # 5.1 优化技术 # 单调队列优化 斜率优化 四边形不等式优化 决策单调性优化 5.2 特殊形式 # 概率动态规划 期望动态规划 计数动态规划 多进程动态规划 5.3 实际问题建模 # 问题转化技巧 状态设计创新 约束条件处理 多目标优化 六、动态规划应用领域 # 6.1 计算机科学应用 # 算法设计与分析 编译原理中的应用 人工智能规划 生物信息学算法 6.2 工程领域应用 # 资源分配问题 生产调度优化 路径规划算法 网络流优化 6.3 经济学与运筹学 # 投资决策模型 库存管理优化 金融风险管理 博弈论中的应用">
@@ -304,10 +304,10 @@
 <title>动态规划求解步骤 | Yuoek</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:39043/docs/toc/tocTabs/tocFile/dp/3_%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%B1%82%E8%A7%A3%E6%AD%A5%E9%AA%A4/">
+<link rel="canonical" href="http://localhost:1313/docs/toc/tocTabs/tocFile/dp/3_%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%B1%82%E8%A7%A3%E6%AD%A5%E9%AA%A4/">
 <link rel="stylesheet" href="/book.min.cc624ff1376052746239610f5efea0eec3ba49e0489b9190bdabed9a1bbd0737.css" integrity="sha256-zGJP8TdgUnRiOWEPXv6g7sO6SeBIm5GQvavtmhu9Bzc=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.5c9887e804666e3adac3dd894fa9bc8cfe7b841cd2e3669339cdd486c37a3ef8.js" integrity="sha256-XJiH6ARmbjraw92JT6m8jP57hBzS42aTOc3UhsN6Pvg=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.b93f33f683e76dcc16cd398913e2a1f86a40369d45833dbf3335b8b3921a30bf.js" integrity="sha256-uT8z9oPnbcwWzTmJE&#43;Kh&#43;GpANp1Fgz2/MzW4s5IaML8=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -927,6 +927,45 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/solution/nowcoder/" class="">Nowcoder</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/luogu/" class="">Luogu</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/leetcode/" class="">Leetcode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-42178b60598f5a4791e49bb322264018" class="toggle"  />
     <label for="section-42178b60598f5a4791e49bb322264018" class="flex">
       <a href="/docs/solution/day/" class="flex-auto ">每日一题</a>
@@ -935,6 +974,19 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/day/day3/" class="">day 3</a>
+  
+
+        </li>
+      
     
       
         <li>
@@ -967,69 +1019,6 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-7d2b33acaedd458c43ec453943c868c0" class="toggle"  />
-    <label for="section-7d2b33acaedd458c43ec453943c868c0" class="flex">
-      <a role="button" class="flex-auto ">Leetcode</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-0105e7ba6c8caad49f2bc6e96f38435d" class="toggle"  />
-    <label for="section-0105e7ba6c8caad49f2bc6e96f38435d" class="flex">
-      <a role="button" class="flex-auto ">Luogu</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-2042dfe36e5b165f0759056b62c66925" class="toggle"  />
-    <label for="section-2042dfe36e5b165f0759056b62c66925" class="flex">
-      <a role="button" class="flex-auto ">Nowcoder</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
   </ul>
 
         </li>
@@ -1055,10 +1044,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-bc634d6be35b27e43030f3495287cc2c" class="toggle" checked />
-    <label for="section-bc634d6be35b27e43030f3495287cc2c" class="flex">
-      <a role="button" class="flex-auto ">Toc</a>
-    </label>
+    <span>Toc</span>
   
 
           

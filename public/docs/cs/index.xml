@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>计算机科学 on Yuoek</title>
-    <link>http://localhost:39043/docs/cs/</link>
+    <link>http://localhost:1313/docs/cs/</link>
     <description>Recent content in 计算机科学 on Yuoek</description>
     <generator>Hugo</generator>
     <language>zh</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:39043/docs/cs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/docs/cs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

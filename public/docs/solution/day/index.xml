@@ -6,8 +6,15 @@
     <description>Recent content in 每日一题 on Yuoek</description>
     <generator>Hugo</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 31 Oct 2025 07:01:09 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 01 Nov 2025 13:52:39 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/docs/solution/day/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>day 3</title>
+      <link>http://localhost:1313/docs/solution/day/day3/</link>
+      <pubDate>Sat, 01 Nov 2025 13:52:39 +0800</pubDate>
+      <guid>http://localhost:1313/docs/solution/day/day3/</guid>
+      <description>&lt;h2 id=&#34;第-3-天&#34;&gt;&#xA;  第 3 天&#xA;  &#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%ac%ac-3-%e5%a4%a9&#34;&gt;#&lt;/a&gt;&#xA;  &#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;牛客--模板差分&#34;&gt;&#xA;  牛客 | &lt;a href=&#34;https://ac.nowcoder.com/acm/problem/226303&#34;&gt;模板：差分&lt;/a&gt;&#xA;  &#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%89%9b%e5%ae%a2--%e6%a8%a1%e6%9d%bf%e5%b7%ae%e5%88%86&#34;&gt;#&lt;/a&gt;&#xA;  &#xA;&lt;/h3&gt;&#xA;&lt;blockquote class=&#34;book-hint info&#34;&gt;&#xA;&lt;details &gt;&lt;summary&gt;题目&lt;/summary&gt;&#xA;  &lt;div class=&#34;markdown-inner&#34;&gt;&#xA;    &lt;h1 id=&#34;模板差分&#34;&gt;&#xA;  模板：差分&#xA;&lt;p&gt;&lt;a class=&#34;anchor&#34; href=&#34;#%e6%a8%a1%e6%9d%bf%e5%b7%ae%e5%88%86&#34;&gt;#&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;题号：NC226303&lt;/p&gt;&#xA;&lt;p&gt;时间限制：C/C++/Rust/Pascal 1秒，其他语言2秒&lt;/p&gt;&#xA;&lt;p&gt;空间限制：C/C++/Rust/Pascal 256 M，其他语言512 M&#xA;64bit IO Format: %lld&lt;/p&gt;&#xA;&lt;h2 id=&#34;题目描述&#34;&gt;&#xA;  题目描述&#xA;&lt;p&gt;&lt;a class=&#34;anchor&#34; href=&#34;#%e9%a2%98%e7%9b%ae%e6%8f%8f%e8%bf%b0&#34;&gt;#&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Etéreo 是个爱学习的好孩子。在年假期间，他依然热情于数学。他最近发现了一个高大上的东西：&lt;/p&gt;&#xA;&lt;p&gt;$$\Theta = \lim_{\nu \to \infty} \left(1 + \frac{1}{\nu}\right)^\nu$$&lt;/p&gt;&#xA;&lt;p&gt;他觉得这里的 $\Theta$ 非常的厉害！然后他又告诉你：&lt;/p&gt;&#xA;&lt;p&gt;$$\Psi = \underbrace{\Theta \times \Theta \times \Theta \times \cdots \times \Theta}_{\alpha个\Theta}$$&lt;/p&gt;&#xA;&lt;p&gt;$$\Omega = \underbrace{\Psi + \Psi + \Psi + \cdots + \Psi}_{\beta个\Psi}$$&lt;/p&gt;&#xA;&lt;p&gt;他会告诉你 $\alpha$ 和 $\beta$ ，想请你告诉他 $\Omega$ 的值。当然这是一个小数，所以请你在小数点后保留 $\gamma$ 位。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>day 2</title>
       <link>http://localhost:1313/docs/solution/day/day2/</link>

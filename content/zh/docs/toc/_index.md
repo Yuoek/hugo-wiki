@@ -1,7 +1,14 @@
 ---
-bookFlatSection: false
+title: 
+date: 2025-11-01T14:00:11+08:00
+categories: ""
+tags: ""
+series: ""
+series_order: ""
+type: ""
 bookCollapseSection: true
-date: 2025-07-01T07:23:16+08:00
 ---
+
+{{< katex />}}
 
 

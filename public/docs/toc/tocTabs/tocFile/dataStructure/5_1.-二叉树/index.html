@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=39043&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
@@ -305,7 +305,7 @@ B&#43;树
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39043/docs/toc/tocTabs/tocFile/dataStructure/5_1.-%E4%BA%8C%E5%8F%89%E6%A0%91/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/toc/tocTabs/tocFile/dataStructure/5_1.-%E4%BA%8C%E5%8F%89%E6%A0%91/">
   <meta property="og:site_name" content="Yuoek">
   <meta property="og:title" content="1. 二叉树">
   <meta property="og:description" content="第一章 二叉树基础概念 # 1.1 二叉树定义与特性 # 二叉树的基本定义 二叉树的性质与特点 二叉树与一般树的区别 二叉树的基本术语（根节点、叶子节点、子树等） 1.2 二叉树分类 # 满二叉树 完全二叉树 平衡二叉树 斜树（左斜树、右斜树） 二叉搜索树 线索二叉树 第二章 二叉树存储结构 # 2.1 顺序存储结构 # 数组表示法 完全二叉树的顺序存储 一般二叉树的顺序存储 存储效率分析 2.2 链式存储结构 # 二叉链表表示法 三叉链表表示法 节点结构设计 存储空间分析 第三章 二叉树遍历算法 # 3.1 深度优先遍历 # 前序遍历（先序遍历） 中序遍历 后序遍历 递归实现方法 非递归实现方法 3.2 广度优先遍历 # 层次遍历算法 队列在层次遍历中的应用 遍历的时间复杂度分析 第四章 特殊二叉树结构 # 4.1 二叉搜索树 # 定义与性质 查找操作 插入操作 删除操作 性能分析 4.2 平衡二叉树 # AVL树 红黑树 平衡因子计算 旋转操作（左旋、右旋） 平衡调整策略 4.3 堆结构 # 最大堆与最小堆 堆的构建 堆排序算法 优先队列实现 第五章 二叉树应用 # 5.1 表达式树 # 中缀表达式转表达式树 表达式求值 前缀、中缀、后缀表达式转换 5.2 哈夫曼树 # 哈夫曼编码原理 哈夫曼树构建算法 数据压缩应用 最优前缀码特性 5.3 决策树与分类树 # 在机器学习中的应用 决策树构建方法 信息增益与基尼系数 第六章 二叉树算法进阶 # 6.1 二叉树基本操作 # 节点计数 树的高度计算 叶子节点统计 判断完全二叉树 判断平衡二叉树 6.2 二叉树重构 # 根据遍历序列重构二叉树 前序&#43;中序重构 后序&#43;中序重构 层次遍历重构 6.3 二叉树路径问题 # 根到叶子节点路径 最长路径问题 路径和问题 最近公共祖先问题 第七章 二叉树扩展与变体 # 7.1 多路搜索树 # B树 B&#43;树 在数据库索引中的应用 7.2 线索二叉树 # 线索化过程 中序线索二叉树 前序线索二叉树 后序线索二叉树 线索二叉树的遍历 7.3 其他二叉树变体 # 伸展树 替罪羊树 树堆（Treap） 区间树 第八章 二叉树性能分析与优化 # 8.1 时间复杂度分析 # 各种操作的时间复杂度 最坏情况与平均情况分析 空间复杂度分析 8.2 平衡优化策略 # 自平衡机制 缓存友好设计 内存布局优化 8.3 实际应用中的性能考量 # 大数据量下的性能表现 并发环境下的二叉树操作 持久化存储优化">
@@ -317,10 +317,10 @@ B&#43;树
 <title>1. 二叉树 | Yuoek</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:39043/docs/toc/tocTabs/tocFile/dataStructure/5_1.-%E4%BA%8C%E5%8F%89%E6%A0%91/">
+<link rel="canonical" href="http://localhost:1313/docs/toc/tocTabs/tocFile/dataStructure/5_1.-%E4%BA%8C%E5%8F%89%E6%A0%91/">
 <link rel="stylesheet" href="/book.min.cc624ff1376052746239610f5efea0eec3ba49e0489b9190bdabed9a1bbd0737.css" integrity="sha256-zGJP8TdgUnRiOWEPXv6g7sO6SeBIm5GQvavtmhu9Bzc=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.5c9887e804666e3adac3dd894fa9bc8cfe7b841cd2e3669339cdd486c37a3ef8.js" integrity="sha256-XJiH6ARmbjraw92JT6m8jP57hBzS42aTOc3UhsN6Pvg=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.b93f33f683e76dcc16cd398913e2a1f86a40369d45833dbf3335b8b3921a30bf.js" integrity="sha256-uT8z9oPnbcwWzTmJE&#43;Kh&#43;GpANp1Fgz2/MzW4s5IaML8=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -940,6 +940,45 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/solution/nowcoder/" class="">Nowcoder</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/luogu/" class="">Luogu</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/leetcode/" class="">Leetcode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-42178b60598f5a4791e49bb322264018" class="toggle"  />
     <label for="section-42178b60598f5a4791e49bb322264018" class="flex">
       <a href="/docs/solution/day/" class="flex-auto ">每日一题</a>
@@ -948,6 +987,19 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/day/day3/" class="">day 3</a>
+  
+
+        </li>
+      
     
       
         <li>
@@ -980,69 +1032,6 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-7d2b33acaedd458c43ec453943c868c0" class="toggle"  />
-    <label for="section-7d2b33acaedd458c43ec453943c868c0" class="flex">
-      <a role="button" class="flex-auto ">Leetcode</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-0105e7ba6c8caad49f2bc6e96f38435d" class="toggle"  />
-    <label for="section-0105e7ba6c8caad49f2bc6e96f38435d" class="flex">
-      <a role="button" class="flex-auto ">Luogu</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-2042dfe36e5b165f0759056b62c66925" class="toggle"  />
-    <label for="section-2042dfe36e5b165f0759056b62c66925" class="flex">
-      <a role="button" class="flex-auto ">Nowcoder</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
   </ul>
 
         </li>
@@ -1068,10 +1057,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-bc634d6be35b27e43030f3495287cc2c" class="toggle" checked />
-    <label for="section-bc634d6be35b27e43030f3495287cc2c" class="flex">
-      <a role="button" class="flex-auto ">Toc</a>
-    </label>
+    <span>Toc</span>
   
 
           

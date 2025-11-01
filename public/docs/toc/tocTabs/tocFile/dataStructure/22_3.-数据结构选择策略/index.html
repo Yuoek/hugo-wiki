@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=39043&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
@@ -318,7 +318,7 @@ B树与B&#43;树
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39043/docs/toc/tocTabs/tocFile/dataStructure/22_3.-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%80%89%E6%8B%A9%E7%AD%96%E7%95%A5/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/toc/tocTabs/tocFile/dataStructure/22_3.-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%80%89%E6%8B%A9%E7%AD%96%E7%95%A5/">
   <meta property="og:site_name" content="Yuoek">
   <meta property="og:title" content="3. 数据结构选择策略">
   <meta property="og:description" content="第一部分 数据结构基础概念 # 数据结构分类 # 线性数据结构 非线性数据结构 集合结构 文件结构 数据结构基本操作 # 插入操作 删除操作 查找操作 遍历操作 排序操作 第二部分 常用数据结构特性分析 # 数组与链表 # 数组的连续存储特性 链表的动态分配特性 数组与链表的性能对比 适用场景分析 栈与队列 # 栈的LIFO特性及应用 队列的FIFO特性及应用 双端队列与优先队列 实际应用案例分析 树形结构 # 二叉树的基本概念 平衡二叉树与红黑树 B树与B&#43;树 堆结构及其应用 图结构 # 图的表示方法 图的遍历算法 最短路径问题 最小生成树算法 哈希结构 # 哈希函数设计原则 冲突解决方法 哈希表的性能分析 分布式哈希表 第三部分 选择策略核心因素 # 时间复杂度分析 # 最好情况时间复杂度 最坏情况时间复杂度 平均情况时间复杂度 摊还分析技术 空间复杂度考虑 # 静态空间需求 动态空间增长 空间与时间的权衡 内存管理策略 数据访问模式 # 顺序访问需求 随机访问需求 范围查询需求 模式匹配需求 数据规模与增长 # 小规模数据处理 大规模数据处理 数据增长预测 可扩展性要求 第四部分 应用场景导向选择 # 内存受限环境 # 嵌入式系统数据结构 移动设备优化策略 缓存友好数据结构 内存压缩技术 高性能计算需求 # 并发数据结构 锁自由数据结构 向量化优化 缓存局部性优化 持久化存储需求 # 磁盘友好数据结构 数据库索引结构 文件系统数据结构 日志结构合并树 实时系统要求 # 确定性时间复杂度 实时调度兼容性 低延迟数据结构 硬实时系统约束 第五部分 高级选择策略 # 复合数据结构 # 数据结构组合策略 适配器模式应用 装饰器模式应用 自定义数据结构设计 领域特定优化 # 科学计算数据结构 图形处理数据结构 网络协议数据结构 人工智能数据结构 编程语言特性影响 # 不同语言的内存模型 垃圾收集影响 模板与泛型编程 函数式数据结构 测试与性能评估 # 基准测试方法 性能剖析技术 压力测试策略 回归测试保障 第六部分 实际案例分析 # 经典算法实现 # 排序算法数据结构选择 搜索算法数据结构优化 图算法数据结构适配 字符串处理数据结构 系统设计案例 # 操作系统内核数据结构 数据库管理系统结构 编译器数据结构设计 网络服务器数据结构 现代应用场景 # 大数据处理框架 分布式系统数据结构 云计算环境优化 物联网设备数据结构 性能调优实践 # 热点分析技术 瓶颈识别方法 优化策略实施 监控与改进循环">
@@ -330,10 +330,10 @@ B树与B&#43;树
 <title>3. 数据结构选择策略 | Yuoek</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:39043/docs/toc/tocTabs/tocFile/dataStructure/22_3.-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%80%89%E6%8B%A9%E7%AD%96%E7%95%A5/">
+<link rel="canonical" href="http://localhost:1313/docs/toc/tocTabs/tocFile/dataStructure/22_3.-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%80%89%E6%8B%A9%E7%AD%96%E7%95%A5/">
 <link rel="stylesheet" href="/book.min.cc624ff1376052746239610f5efea0eec3ba49e0489b9190bdabed9a1bbd0737.css" integrity="sha256-zGJP8TdgUnRiOWEPXv6g7sO6SeBIm5GQvavtmhu9Bzc=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.5c9887e804666e3adac3dd894fa9bc8cfe7b841cd2e3669339cdd486c37a3ef8.js" integrity="sha256-XJiH6ARmbjraw92JT6m8jP57hBzS42aTOc3UhsN6Pvg=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.b93f33f683e76dcc16cd398913e2a1f86a40369d45833dbf3335b8b3921a30bf.js" integrity="sha256-uT8z9oPnbcwWzTmJE&#43;Kh&#43;GpANp1Fgz2/MzW4s5IaML8=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -953,6 +953,45 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/solution/nowcoder/" class="">Nowcoder</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/luogu/" class="">Luogu</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/leetcode/" class="">Leetcode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-42178b60598f5a4791e49bb322264018" class="toggle"  />
     <label for="section-42178b60598f5a4791e49bb322264018" class="flex">
       <a href="/docs/solution/day/" class="flex-auto ">每日一题</a>
@@ -961,6 +1000,19 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/day/day3/" class="">day 3</a>
+  
+
+        </li>
+      
     
       
         <li>
@@ -993,69 +1045,6 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-7d2b33acaedd458c43ec453943c868c0" class="toggle"  />
-    <label for="section-7d2b33acaedd458c43ec453943c868c0" class="flex">
-      <a role="button" class="flex-auto ">Leetcode</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-0105e7ba6c8caad49f2bc6e96f38435d" class="toggle"  />
-    <label for="section-0105e7ba6c8caad49f2bc6e96f38435d" class="flex">
-      <a role="button" class="flex-auto ">Luogu</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-2042dfe36e5b165f0759056b62c66925" class="toggle"  />
-    <label for="section-2042dfe36e5b165f0759056b62c66925" class="flex">
-      <a role="button" class="flex-auto ">Nowcoder</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
   </ul>
 
         </li>
@@ -1081,10 +1070,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-bc634d6be35b27e43030f3495287cc2c" class="toggle" checked />
-    <label for="section-bc634d6be35b27e43030f3495287cc2c" class="flex">
-      <a role="button" class="flex-auto ">Toc</a>
-    </label>
+    <span>Toc</span>
   
 
           

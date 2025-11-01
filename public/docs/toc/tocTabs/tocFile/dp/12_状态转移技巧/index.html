@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=39043&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
@@ -278,7 +278,7 @@ CDQ分治应用
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:39043/docs/toc/tocTabs/tocFile/dp/12_%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB%E6%8A%80%E5%B7%A7/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/toc/tocTabs/tocFile/dp/12_%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB%E6%8A%80%E5%B7%A7/">
   <meta property="og:site_name" content="Yuoek">
   <meta property="og:title" content="状态转移技巧">
   <meta property="og:description" content="一、基础状态转移方法 # 1. 线性DP状态转移 # 单序列线性DP 双序列线性DP 多维线性DP 2. 区间DP状态转移 # 区间划分策略 区间合并技巧 环形区间处理 3. 树形DP状态转移 # 子树状态转移 树上路径处理 换根DP技巧 二、状态设计优化技巧 # 1. 状态压缩技术 # 二进制状态压缩 三进制状态压缩 集合状态表示 2. 状态维度优化 # 滚动数组技巧 状态降维方法 冗余状态消除 3. 状态表示转换 # 状态重定义技巧 状态等价转换 状态映射方法 三、转移方程优化策略 # 1. 递推关系优化 # 前缀和优化 差分优化 矩阵快速幂优化 2. 数据结构优化 # 单调队列优化 线段树优化 树状数组优化 3. 数学方法优化 # 组合数学优化 数论方法优化 概率期望优化 四、特殊转移技巧 # 1. 记忆化搜索 # 递归实现方法 状态缓存策略 剪枝优化技巧 2. 状态机DP # 有限状态机设计 状态转移图构建 多状态协调 3. 插头DP # 轮廓线状态表示 连通性状态维护 插头转移规则 五、高级转移技巧 # 1. 斜率优化 # 凸包维护技巧 决策单调性利用 斜率计算优化 2. 四边形不等式优化 # 区间DP优化 决策单调性证明 优化实现方法 3. 分治优化 # CDQ分治应用 整体二分技巧 分治决策优化 六、实际应用场景 # 1. 背包问题变种 # 多重背包优化 分组背包处理 依赖背包解决 2. 图论DP应用 # 最短路径DP 拓扑排序DP 网络流结合 3. 字符串DP应用 # 编辑距离计算 最长公共子序列 字符串匹配DP 七、调试与优化 # 1. 状态转移验证 # 边界条件检查 转移正确性验证 样例测试方法 2. 性能优化 # 时间复杂度分析 空间复杂度优化 常数优化技巧 3. 代码实现技巧 # 状态初始化方法 转移方程编码 调试输出策略">
@@ -290,10 +290,10 @@ CDQ分治应用
 <title>状态转移技巧 | Yuoek</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:39043/docs/toc/tocTabs/tocFile/dp/12_%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB%E6%8A%80%E5%B7%A7/">
+<link rel="canonical" href="http://localhost:1313/docs/toc/tocTabs/tocFile/dp/12_%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB%E6%8A%80%E5%B7%A7/">
 <link rel="stylesheet" href="/book.min.cc624ff1376052746239610f5efea0eec3ba49e0489b9190bdabed9a1bbd0737.css" integrity="sha256-zGJP8TdgUnRiOWEPXv6g7sO6SeBIm5GQvavtmhu9Bzc=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.5c9887e804666e3adac3dd894fa9bc8cfe7b841cd2e3669339cdd486c37a3ef8.js" integrity="sha256-XJiH6ARmbjraw92JT6m8jP57hBzS42aTOc3UhsN6Pvg=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.b93f33f683e76dcc16cd398913e2a1f86a40369d45833dbf3335b8b3921a30bf.js" integrity="sha256-uT8z9oPnbcwWzTmJE&#43;Kh&#43;GpANp1Fgz2/MzW4s5IaML8=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -913,6 +913,45 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/solution/nowcoder/" class="">Nowcoder</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/luogu/" class="">Luogu</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/leetcode/" class="">Leetcode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-42178b60598f5a4791e49bb322264018" class="toggle"  />
     <label for="section-42178b60598f5a4791e49bb322264018" class="flex">
       <a href="/docs/solution/day/" class="flex-auto ">每日一题</a>
@@ -921,6 +960,19 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/solution/day/day3/" class="">day 3</a>
+  
+
+        </li>
+      
     
       
         <li>
@@ -953,69 +1005,6 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-7d2b33acaedd458c43ec453943c868c0" class="toggle"  />
-    <label for="section-7d2b33acaedd458c43ec453943c868c0" class="flex">
-      <a role="button" class="flex-auto ">Leetcode</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-0105e7ba6c8caad49f2bc6e96f38435d" class="toggle"  />
-    <label for="section-0105e7ba6c8caad49f2bc6e96f38435d" class="flex">
-      <a role="button" class="flex-auto ">Luogu</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-2042dfe36e5b165f0759056b62c66925" class="toggle"  />
-    <label for="section-2042dfe36e5b165f0759056b62c66925" class="flex">
-      <a role="button" class="flex-auto ">Nowcoder</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
   </ul>
 
         </li>
@@ -1041,10 +1030,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-bc634d6be35b27e43030f3495287cc2c" class="toggle" checked />
-    <label for="section-bc634d6be35b27e43030f3495287cc2c" class="flex">
-      <a role="button" class="flex-auto ">Toc</a>
-    </label>
+    <span>Toc</span>
   
 
           
