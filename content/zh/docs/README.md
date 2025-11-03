@@ -23,6 +23,10 @@ type: ""
 ### 每日一题 🏷
 | 时间	    | 网站  | 题名 | 链接 | 标签 |	备注 |	
 | --------- | -------------- | ---------- | ---- | ---- | ---- | 
+| 11月3日   | 牛客 | 简单的排序 | [231953](https://ac.nowcoder.com/acm/problem/231953) |  |  |
+|           | 洛谷 | 排列排序 | [P7714](https://www.luogu.com.cn/problem/P7714) |          |  |
+|           | 力扣 | 数组的相对排序   | [relative-sort-array](https://leetcode.cn/problems/relative-sort-array/description/) |  |  |
+| 11月      |      |          |                                                              |  |  | 
 | 11月1日   | 牛客 | 模板：差分 | [226303](https://ac.nowcoder.com/acm/problem/226303) |  |  |
 |           | 洛谷 | 欢乐的跳 | [P1152](https://www.luogu.com.cn/problem/P1152) |          |  |
 |           | 力扣 | 分糖果   | [distribute-candies](https://leetcode.cn/problems/distribute-candies/description/) |  |  |
