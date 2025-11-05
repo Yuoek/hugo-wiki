@@ -6,6 +6,7 @@ tags: ""
 series: ""
 series_order: ""
 type: ""
+draft: true
 ---
 
 {{< katex />}}
@@ -23,11 +24,16 @@ type: ""
 ### 每日一题 🏷
 | 时间	    | 网站  | 题名 | 链接 | 标签 |	备注 |	
 | --------- | -------------- | ---------- | ---- | ---- | ---- | 
-| 11月6日 TODO🏷  |      |          |                                                              |  |  | 
-| 11月5日   | 牛客 | 小苯的数字排序 | [297830](https://ac.nowcoder.com/acm/problem/297830) |  |  |
+| 11月9日TODO🏷  |      |          |                                                              |  |  | 
+| 11月7日   | 牛客 | 字符串排序1 | [52254](https://ac.nowcoder.com/acm/problem/52254) |  | day9 |
+|           | 洛谷 | 模板-后缀排序 | [P3809](https://www.luogu.com.cn/problem/P3809) | |          |  |
+|           | 力扣 | 按照频率将数组升序排序   | [sort-even-and-odd-indices-independently](https://leetcode.cn/problems/sort-array-by-increasing-frequency/description/) |  |  |
+| 11月6日   | 牛客 | 排序危机 | [277120](https://ac.nowcoder.com/acm/problem/277120) |  | day8 |
+|           | 洛谷 | 排队顺序 | [B3630](https://www.luogu.com.cn/problem/B3630) | |          |  |
+|           | 力扣 | 对奇偶下标分别排序   | [sort-even-and-odd-indices-independently](https://leetcode.cn/problems/sort-even-and-odd-indices-independently/description/) |  |  |
+| 11月5日 🚩   | 牛客 | 小苯的数字排序 | [297830](https://ac.nowcoder.com/acm/problem/297830) |  | day7 |
 |           | 洛谷 | 成绩排序 | [B2159](https://www.luogu.com.cn/problem/B2159) | |          |  |
-|           | 力扣 | 回文数   | [palindrome-number](https://leetcode.cn/problems/palindrome-number/description/)
-|  |  |
+|           | 力扣 | 回文数   | [palindrome-number](https://leetcode.cn/problems/palindrome-number/description/) |  |  |
 | 11月4日      |      |          |                                                              |  |  | 
 | 11月3日   | 牛客 | 简单的排序 | [231953](https://ac.nowcoder.com/acm/problem/231953) |  |  |
 |           | 洛谷 | 排列排序 | [P7714](https://www.luogu.com.cn/problem/P7714) |          |  |

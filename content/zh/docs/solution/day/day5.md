@@ -6,7 +6,6 @@ tags: ""
 series: ""
 series_order: ""
 type: ""
-bookCollapseSection: true
 ---
 
 {{< katex />}}
